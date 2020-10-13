@@ -1,9 +1,20 @@
 @keyframes slideIn {
   from {
     transform: translateX(100%);
+    opacity: 0.25;
   }
   to {
     transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0%);
   }
 }
 
@@ -21,22 +32,46 @@ header {
     height: fit-content;
 
     .logo {
-      font-size: 20px;
+      // font-size: 20px;
+      color: $accent;
     }
 
     .nav-links {
+      display: none;
+      align-items: center;
       &.active {
-        position: absolute;
+        box-shadow: -10px 0px 10px 1px rgba (0, 0, 0, 0.1);
         display: flex;
+        position: absolute;
         flex-direction: column;
         justify-content: space-around;
         height: 100vh;
-        padding-top: 10vh;
+        padding-top: 20vh;
         top: 0;
         right: 0;
-        width: 70%;
-        background-color: darken($background, 5%);
-        animation: slideIn 0.5s ease;
+        width: 60%;
+        max-width: 300px;
+        background-color: darken($background, 2%);
+        animation: slideIn 0.25s ease-in;
+
+        .nav-link {
+          animation: slideIn 0.25s ease-in;
+        }
+      }
+      .nav-link {
+        font-weight: bold;
+        color: $accent;
+        cursor: pointer;
+
+        transition: 0.25s all ease;
+
+        a {
+          color: $text-secondary;
+          text-decoration: none;
+        }
+        a:hover {
+          color: $accent;
+        }
       }
     }
 
@@ -47,23 +82,39 @@ header {
       cursor: pointer;
       z-index: 9000;
 
+      &:hover,
+      &.open {
+        .burger-line {
+          width: 30px;
+        }
+      }
+
       &-line {
-        background-color: black;
-        width: 25px;
+        background-color: $accent;
+        width: 30px;
         height: 3px;
-        margin: 5px;
+        margin: 6px;
+        margin-left: auto;
         transition: 0.25s all ease-in-out;
+
+        &:nth-of-type(1) {
+          width: 40px;
+        }
+        &:nth-of-type(3) {
+          width: 25px;
+        }
       }
 
       &.open {
         .burger-line:nth-of-type(2) {
           opacity: 0;
+          transform: rotate(-225deg) translate(0px, 0px);
         }
         .burger-line:nth-of-type(1) {
-          transform: rotate(-45deg) translate(-5px, 6px);
+          transform: rotate(-45deg) translate(-6px, 6px);
         }
         .burger-line:nth-of-type(3) {
-          transform: rotate(45deg) translate(-5px, -6px);
+          transform: rotate(45deg) translate(-6px, -6px);
         }
       }
     }
