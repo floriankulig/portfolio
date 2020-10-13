@@ -1,0 +1,24 @@
+.btn {
+  border-radius: 5px;
+  padding: 15px 25px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.25s all ease;
+
+  &.basic {
+    border: 2px solid $accent;
+    background-color: transparent;
+    color: $accent;
+
+    &:hover {
+      background-color: rgba(darken($background, 50%), 0.1);
+    }
+  }
+
+  background-color: $accent;
+  color: $background;
+  &:hover {
+    background-color: darken($accent, 5%);
+  }
+}
