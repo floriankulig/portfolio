@@ -7,7 +7,7 @@
 }
 
 @mixin mq($from) {
-  @media (max-width: $from) {
+  @media (min-width: $from) {
     @content;
   }
 }
