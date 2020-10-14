@@ -1,6 +1,6 @@
 .container {
   margin: 0 30px;
-  @include mq(720px) {
+  @include mq($mq-small) {
     margin: 0 45px;
   }
 }
