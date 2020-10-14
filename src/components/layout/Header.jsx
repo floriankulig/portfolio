@@ -17,23 +17,24 @@ export const Header = ({ menuOpen, setMenuOpen }) => {
                     <ul className={menuOpen ? "nav-links active" : "nav-links"}>
                         {navLinks &&
                             navLinks.map(({ url, name }, i) =>
-                                name === "Lebenslauf" ? (
-                                    <li className="nav-link">
-                                        <Button
-                                            basic={false}
-                                            style={{ animationDelay: `${(navLinks.length + 1) * 50}ms` }}
-                                        >
-                                            {name}
-                                        </Button>
+                                name !== "Lebenslauf" ? (
+                                    <li
+                                        className="nav-link"
+                                        style={{ animationDelay: `${i / 9 + 0.2}s` }}
+                                    >
+                                        0{i + 1}. <a href={url}>{name}</a>
                                     </li>
 
                                 ) : (
-                                        <li
-                                            className="nav-link"
-                                            style={{
-                                                animationDelay: `${i * 50}ms`
-                                            }}>
-                                            0{i + 1}. <a href={url}>{name}</a>
+
+                                        <li className="nav-link"
+                                            style={{ animationDelay: `${i / 9 + 0.2}s` }}
+                                        >
+                                            <Button
+                                                basic={false}
+                                            >
+                                                {name}
+                                            </Button>
                                         </li>
                                     )
                             )}
