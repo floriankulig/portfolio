@@ -13,7 +13,7 @@ $btn-color: $accent;
     color: $btn-color;
 
     &:hover {
-      background-color: rgba(darken($background, 50%), 0.1);
+      background-color: rgba(darken($background, 15%), 0.1);
     }
   }
 
