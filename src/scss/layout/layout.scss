@@ -3,4 +3,17 @@
   @include mq($mq-small) {
     margin: 0 45px;
   }
+
+  &.content {
+    min-height: 100vh;
+    padding: 20vh 0;
+  }
+
+  main {
+    margin: 0 auto;
+    width: 90%;
+    section {
+      width: 100%;
+    }
+  }
 }
