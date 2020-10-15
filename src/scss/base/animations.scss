@@ -30,3 +30,14 @@
     opacity: 1;
   }
 }
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-100%);
+    opacity: 1;
+  }
+}
