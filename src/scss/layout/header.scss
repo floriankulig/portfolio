@@ -2,6 +2,8 @@ header {
   width: 100vw;
   padding: 20px 0;
   align-items: center;
+  position: fixed;
+  z-index: 8000;
   nav {
     background-color: transparent;
     display: flex;
