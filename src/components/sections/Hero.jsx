@@ -9,8 +9,10 @@ export const Hero = () => {
     <p className="desc fade-up">
       Ich bin ein Schüler aus Treuchtlingen, Bayern, der Spaß daran hat ausgezeichnete Websites, Apps und Alles, was dazwischen liegt, zu (designen und) entwickeln.
     </p>
-    <Button className="desc fade-up" basic={true} url="mailto:florian.kulig@web.de">
-      Lass uns loslegen
-    </Button>
+    <a href="mailto:florian.kulig@web.de">
+      <Button className="cta fade-up" basic={true}>
+        Lass uns loslegen
+      </Button>
+    </a>
   </>;
 };
