@@ -10,8 +10,8 @@ export const App = () => {
   return (
     <>
       <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      {/* <Content />
-      <Footer /> */}
+      <Content />
+      {/*<Footer /> */}
     </>
   );
 };
