@@ -1,6 +1,7 @@
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 *,
 *:before,
@@ -16,7 +17,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "PT Sans", sans-serif;
   background-color: $background;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
