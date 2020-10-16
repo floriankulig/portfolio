@@ -71,7 +71,7 @@ header {
           margin-left: auto;
         }
       }
-      @include mq($mq-big) {
+      @include mq($mq-normal) {
         width: 600px;
       }
     }

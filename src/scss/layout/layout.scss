@@ -6,14 +6,20 @@
 
   &.content {
     min-height: 100vh;
-    padding: 20vh 0;
+    padding: 25vh 0;
   }
 
   main {
     margin: 0 auto;
     width: 90%;
+    transition: 0.1s width ease;
+    @include mq($mq-big) {
+      width: 85%;
+    }
     section {
       width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
     }
   }
 }
