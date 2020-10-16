@@ -1,6 +1,5 @@
 section.hero {
   h3 {
-    opacity: 0;
     color: $accent;
     font-family: "PT Sans";
     font-size: 1.2rem;
@@ -8,7 +7,6 @@ section.hero {
     margin-bottom: 20px;
   }
   h1 {
-    opacity: 0;
     color: $text;
     font-size: clamp(40px, 8vw, 80px);
     animation-delay: 1.1s;
@@ -21,7 +19,6 @@ section.hero {
     animation-delay: 1.2s;
   }
   .desc {
-    opacity: 0;
     font-family: "PT Sans";
     font-size: 18px;
     line-height: 1.2;
