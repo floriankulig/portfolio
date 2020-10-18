@@ -38,8 +38,8 @@ export const Header = ({ menuOpen, setMenuOpen }) => {
                     </ul>
                     <div
                         className={menuOpen ? "burger open" : "burger"}
-                        onClick={() => setMenuOpen(!menuOpen)}
-                        onKeyDown={() => setMenuOpen(!menuOpen)}
+                        onClick={() => setMenuOpen(prev => !prev)}
+                        onKeyDown={() => setMenuOpen(prev => !prev)}
                     >
                         <div className="burger-line"></div>
                         <div className="burger-line"></div>
