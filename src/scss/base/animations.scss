@@ -39,8 +39,11 @@
   80% {
     opacity: 0.25;
   }
-  to {
+  90% {
+    opacity: 0.5;
     transform: translateY(0px);
+  }
+  to {
     opacity: 1;
   }
 }
