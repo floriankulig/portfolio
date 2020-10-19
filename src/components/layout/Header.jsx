@@ -1,13 +1,7 @@
 import React from "react";
 import { Button } from "../Button";
-import { baseUrl } from "../../helpers";
+import { baseUrl, navLinks } from "../../helpers";
 
-const navLinks = [
-    { name: "Über Mich", url: "/#about" },
-    { name: "Projekte", url: "/#projects" },
-    { name: "Kontakt", url: "/#contact" },
-    { name: "Lebenslauf", url: "/resume.pdf" },
-];
 
 export const Header = ({ menuOpen, setMenuOpen }) => {
     return (
@@ -23,7 +17,7 @@ export const Header = ({ menuOpen, setMenuOpen }) => {
                                         className="nav-link"
                                         style={{ animationDelay: `${i / 9 + 0.2}s` }}
                                     >
-                                        0{i + 1}. <a href={baseUrl + url}>{name}</a>
+                                        <span className="link-idx">0{i + 1}. </span><a href={baseUrl + url}>{name}</a>
                                     </li>
                                 ) : (
                                         <li
