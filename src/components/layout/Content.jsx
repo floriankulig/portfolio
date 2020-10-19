@@ -1,4 +1,5 @@
 import React from "react";
+import { SectionHeader } from "../SectionHeader";
 import { About } from "../sections/About";
 import { Hero } from "../sections/Hero";
 
@@ -10,9 +11,7 @@ export const Content = () => {
           <Hero />
         </section>
         <section className="about section">
-          <h2 className="section__title">
-            <span className="section__title-idx">01. </span>Über mich
-          </h2>
+          <SectionHeader number={1}>Über mich</SectionHeader>
           <About />
         </section>
       </main>
