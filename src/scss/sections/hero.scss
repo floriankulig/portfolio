@@ -1,7 +1,7 @@
 section.hero {
   h3 {
     color: $accent;
-    font-family: "PT Sans";
+    font-family: "Open Sans";
     font-size: 1.2rem;
     animation-delay: 1s;
     margin-bottom: 20px;
@@ -14,15 +14,11 @@ section.hero {
     margin-top: 25px;
   }
   h1.short-desc {
-    color: $primary-light;
+    color: lighten($primary-light, 6%);
     margin-top: 10px;
     animation-delay: 1.2s;
   }
   .desc {
-    font-family: "PT Sans";
-    font-size: 18px;
-    line-height: 1.2;
-    color: $primary-light;
     animation-delay: 1.3s;
     margin-top: 25px;
     max-width: clamp(200px, 75vw, 450px);
