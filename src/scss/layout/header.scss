@@ -4,8 +4,8 @@ header {
   align-items: center;
   position: fixed;
   z-index: 8000;
+  background-color: $background;
   nav {
-    background-color: transparent;
     display: flex;
     flex-direction: row;
     width: 100%;
