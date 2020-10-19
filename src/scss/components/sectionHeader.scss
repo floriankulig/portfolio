@@ -1,0 +1,20 @@
+.section__title {
+  background: $background;
+  color: $text;
+  font-size: clamp(26px, 5vw, 32px);
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin: 10px 0px 40px;
+  white-space: nowrap;
+  &-idx {
+    color: $accent;
+  }
+  &:after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid $primary-light;
+    width: 100%;
+    margin-left: 20px;
+  }
+}
