@@ -12,7 +12,9 @@ export const Content = () => {
         </section>
         <section className="about section">
           <SectionHeader number={1}>Über mich</SectionHeader>
-          <About />
+          <div className="section__inner">
+            <About />
+          </div>
         </section>
       </main>
     </div>
