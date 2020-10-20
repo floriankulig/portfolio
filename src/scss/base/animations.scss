@@ -34,21 +34,15 @@
 @keyframes fadeUp {
   from {
     opacity: 0;
-    transform: translateY(150px);
-  }
-  80% {
-    opacity: 0.25;
-  }
-  90% {
-    opacity: 0.5;
-    transform: translateY(0px);
+    transform: translateY(75px);
   }
   to {
+    transform: translateY(0px);
     opacity: 1;
   }
 }
 
 .fade-up {
   opacity: 0;
-  animation: fadeUp 0.4s ease-out forwards;
+  animation: fadeUp 0.4s $easing forwards;
 }
