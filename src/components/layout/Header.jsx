@@ -17,7 +17,7 @@ export const Header = ({ menuOpen, setMenuOpen }) => {
                 name !== "Lebenslauf" ? (
                   <li
                     className="nav-link"
-                    style={{ animationDelay: `${i / 9 + 0.2}s` }}
+                    style={{ animationDelay: `${i / 9 + 0.3}s` }}
                   >
                     <span className="link-idx">0{i + 1}. </span>
                     <a href={baseUrl + url}>{name}</a>
@@ -25,7 +25,7 @@ export const Header = ({ menuOpen, setMenuOpen }) => {
                 ) : (
                   <li
                     className="nav-link"
-                    style={{ animationDelay: `${i / 9 + 0.2}s` }}
+                    style={{ animationDelay: `${i / 9 + 0.3}s` }}
                   >
                     <Button basic={false}>{name}</Button>
                   </li>

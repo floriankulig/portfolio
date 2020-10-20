@@ -15,7 +15,7 @@ header {
 
     .logo {
       color: $accent;
-      transition: 0.25s all ease;
+      transition: 0.25s all $easing;
       svg {
         width: 45px;
         height: 45px;
@@ -36,7 +36,7 @@ header {
       width: 60%;
       max-width: 300px;
       background-color: darken($background, 3%);
-      transition: 0.4s all ease;
+      transition: 0.4s all $easing;
 
       &.active {
         transform: translateX(0%);
@@ -49,8 +49,8 @@ header {
         font-weight: bold;
         color: $accent;
         cursor: pointer;
-        transition: 0.25s all ease;
-        animation: fadeDown 0.25s ease forwards;
+        transition: 0.25s all $easing;
+        animation: fadeDown 0.25s $easing forwards;
 
         a {
           color: $text;
