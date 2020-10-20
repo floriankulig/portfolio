@@ -1,6 +1,24 @@
 section.about {
   padding-top: 35vh;
-  p {
-    max-width: 500px;
+  max-width: 960px;
+
+  .section__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &-desc {
+      margin-bottom: 5vh;
+      max-width: 500px;
+    }
+
+    &-svg {
+      max-width: 400px;
+      // margin-left: 50px;
+      svg {
+        height: 90%;
+        width: 100%;
+      }
+    }
   }
 }
