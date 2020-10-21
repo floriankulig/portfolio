@@ -1,0 +1,16 @@
+.skills {
+  display: grid;
+  grid-template-areas:
+    "itemArea itemArea"
+    "itemArea itemArea"
+    "itemArea itemArea";
+
+  li {
+    color: $primary-light;
+    margin-bottom: 5px;
+    &:before {
+      color: $accent;
+      content: "● ";
+    }
+  }
+}
