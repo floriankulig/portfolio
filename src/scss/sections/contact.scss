@@ -1,0 +1,15 @@
+section.contact {
+  max-width: 400px;
+  text-align: center;
+
+  p {
+    margin-top: 30px;
+  }
+  span {
+    color: $primary;
+    transition: 0.25s all $easing;
+  }
+  .btn {
+    margin-top: 20px;
+  }
+}
