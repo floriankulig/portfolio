@@ -4,7 +4,7 @@ header {
   align-items: center;
   position: fixed;
   z-index: 8000;
-  background-color: $background;
+  background-color: rgba($background, 0.97);
   nav {
     display: flex;
     flex-direction: row;
