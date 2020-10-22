@@ -9,6 +9,7 @@ section.about {
     @include mq($mq-normal) {
       flex-direction: row;
     }
+
     &-desc {
       margin-bottom: 5vh;
       max-width: 500px;
@@ -16,7 +17,9 @@ section.about {
 
     &-svg {
       max-width: 400px;
-      @include mq($mq-small) {
+      margin: 0 auto;
+      @include mq($mq-normal) {
+        margin: 0;
         margin-left: 50px;
       }
       svg {
