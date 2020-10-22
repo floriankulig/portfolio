@@ -19,6 +19,10 @@
     section {
       width: fit-content;
       margin: 0 auto;
+      padding-top: 35vh;
+      &:first-of-type {
+        padding-top: 0;
+      }
     }
   }
 }
