@@ -14,7 +14,7 @@ section.hero {
     margin-top: 25px;
   }
   h1.short-desc {
-    color: lighten($primary-light, 2%);
+    color: $primary-light;
     margin-top: 10px;
     animation-delay: 1.2s;
   }
