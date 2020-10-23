@@ -19,7 +19,7 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 60px;
-    transition: 0.25s height $easing;
+    transition: 0.3s height ease-out;
 
     .logo {
       color: $accent;
