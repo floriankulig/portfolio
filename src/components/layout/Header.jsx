@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Button } from "../Button";
-import { baseUrl, navLinks } from "../../helpers";
+import { navLinks } from "../../constants";
 import { ReactComponent as Logo } from "../../images/logo-header.svg";
 
 export const Header = ({ menuOpen, setMenuOpen }) => {
@@ -30,14 +30,16 @@ export const Header = ({ menuOpen, setMenuOpen }) => {
                   <li
                     className="nav-link"
                     style={{ animationDelay: `${i / 9 + 0.3}s` }}
+                    key={name}
                   >
                     <span className="link-idx">0{i + 1}. </span>
-                    <a href={baseUrl + url}>{name}</a>
+                    <a href={url}>{name}</a>
                   </li>
                 ) : (
                   <li
                     className="nav-link"
                     style={{ animationDelay: `${i / 9 + 0.3}s` }}
+                    key={name}
                   >
                     <Button basic={false}>{name}</Button>
                   </li>
