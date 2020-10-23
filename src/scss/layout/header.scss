@@ -5,7 +5,7 @@ header {
   position: fixed;
   z-index: 8000;
   background-color: rgba($background, 0.97);
-  transition: 0.25s all $easing;
+  transition: 0.4s box-shadow $easing;
   &.scrolled {
     box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.7);
     nav {
@@ -19,7 +19,7 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 60px;
-    transition: 0.25s all $easing;
+    transition: 0.25s height $easing;
 
     .logo {
       color: $accent;
