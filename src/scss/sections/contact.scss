@@ -8,8 +8,32 @@ section.contact {
   .contact__mail {
     color: $primary;
     transition: 0.25s all $easing;
+    cursor: pointer;
   }
   .btn {
     margin-top: 20px;
+  }
+
+  .snackbar {
+    position: fixed;
+    width: fit-content;
+    background: $background;
+    padding: 10px 20px;
+    border: 2px solid $primary;
+    border-radius: 10px;
+    bottom: 50px;
+    left: 50px;
+    transform: translateX(-400px);
+    transition: 0.25s all $easing;
+    &.open {
+      transform: translateX(0);
+    }
+    &__message {
+      font-family: "Open Sans", sans-serif;
+      margin: 0;
+      font-weight: bold;
+      color: $text;
+      position: relative;
+    }
   }
 }
