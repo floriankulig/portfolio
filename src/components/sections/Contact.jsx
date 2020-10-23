@@ -9,7 +9,7 @@ export const Contact = () => {
         copyToClipboard("florian.kulig@web.de");
         setSnackbarOpen(true);
         //+ 500: basic slideIn/Out animation duration
-        setTimeout(() => setSnackbarOpen(false), overlayDuration + 500)
+        setTimeout(() => setSnackbarOpen(false), overlayDuration)
         clearTimeout()
     };
 
@@ -33,10 +33,9 @@ export const Contact = () => {
             </a>
 
 
-            {snackbarOpen &&
-                <div className="snackbar">
-                    <p className="snackbar__message">Email in die Zwischenablage kopiert!</p>
-                </div>}
+            <div className={snackbarOpen ? "snackbar open" : "snackbar"}>
+                <p className="snackbar__message">Email in die Zwischenablage kopiert!</p>
+            </div>
         </>
     );
 };
