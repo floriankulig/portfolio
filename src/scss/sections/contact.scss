@@ -16,17 +16,26 @@ section.contact {
 
   .snackbar {
     position: fixed;
-    width: fit-content;
     background: $background;
     padding: 10px 20px;
     border: 2px solid $primary;
     border-radius: 10px;
     bottom: 50px;
     left: 50px;
-    transform: translateX(-400px);
+    transform: translateY(400px);
+    width: clamp(20px, 75vw, 400px);
+    @include no-select();
+    @include mq($mq-small) {
+      width: fit-content;
+      transform: translateX(-400px);
+    }
+
     transition: 0.25s all $easing;
     &.open {
-      transform: translateX(0);
+      @include mq($mq-small) {
+        transform: translateX(0);
+      }
+      transform: translateY(0);
     }
     &__message {
       font-family: "Open Sans", sans-serif;
