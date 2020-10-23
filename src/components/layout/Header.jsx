@@ -1,11 +1,23 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Button } from "../Button";
 import { baseUrl, navLinks } from "../../helpers";
 import { ReactComponent as Logo } from "../../images/logo-header.svg";
 
 export const Header = ({ menuOpen, setMenuOpen }) => {
+  const [scrolled, setScrolled] = useState(false);
+
+  const handleScroll = () => {
+    setScrolled(window.pageYOffset >= 50);
+  };
+
+  useEffect(() => {
+    document.addEventListener("scroll", handleScroll);
+
+    return () => document.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header>
+    <header className={scrolled ? "scrolled" : undefined}>
       <div className="container">
         <nav>
           <div className="logo">
