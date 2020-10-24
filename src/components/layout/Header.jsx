@@ -22,9 +22,9 @@ export const Header = ({ menuOpen, setMenuOpen }) => {
     <header
       className={
         scrolled && scrollDir === "down"
-          ? "scrolled down"
-          : scrolled && scrollDir === "up"
           ? "scrolled up"
+          : scrolled && scrollDir === "up"
+          ? "scrolled down"
           : undefined
       }
     >
