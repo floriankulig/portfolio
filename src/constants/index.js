@@ -6,3 +6,5 @@ export const navLinks = [
   { name: "Kontakt", url: "/#contact" },
   { name: "Lebenslauf", url: "/resume.pdf" },
 ];
+
+export const email = "florian.kulig@web.de";

@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { copyToClipboard } from "../../helpers";
 import { Button } from "../Button";
-import { overlayDuration } from "../../constants"
+import { overlayDuration, email } from "../../constants"
 
 export const Contact = () => {
     const [snackbarOpen, setSnackbarOpen] = useState(false);
     const handleEmailClick = () => {
-        copyToClipboard("florian.kulig@web.de");
+        copyToClipboard(email);
         setSnackbarOpen(true);
         //+ 500: basic slideIn/Out animation duration
         setTimeout(() => setSnackbarOpen(false), overlayDuration)
@@ -23,12 +23,12 @@ export const Contact = () => {
                     onClick={() => handleEmailClick()}
                     onKeyDown={() => handleEmailClick()}
                 >
-                    florian.kulig@web.de
+                    {email}
                 </span>{" "}
                 oder klicken Sie unten.
              </p>
 
-            <a href="mailto:florian.kulig@web.de">
+            <a href={`mailto:${email}`}>
                 <Button basic={true}>Hallo sagen</Button>
             </a>
 

@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "../Button";
+import { email } from "../../constants";
 
 export const Hero = () => {
   return (
@@ -12,7 +13,7 @@ export const Hero = () => {
         designbetonte Websites, Apps und alles, was dazu gehört, zu (designen
         und) entwickeln.
       </p>
-      <a href="mailto:florian.kulig@web.de">
+      <a href={`mailto:${email}`}>
         <Button className="cta fade-up" basic={true}>
           In Kontakt treten
         </Button>
