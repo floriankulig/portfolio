@@ -2,9 +2,11 @@ import React, { useState, useEffect } from "react";
 import { Button } from "../Button";
 import { navLinks } from "../../constants";
 import { ReactComponent as Logo } from "../../images/logo-header.svg";
+import { useScrollDir } from "../../hooks";
 
 export const Header = ({ menuOpen, setMenuOpen }) => {
   const [scrolled, setScrolled] = useState(false);
+  const scrollDir = useScrollDir("down");
 
   const handleScroll = () => {
     setScrolled(window.pageYOffset >= 50);
@@ -17,7 +19,15 @@ export const Header = ({ menuOpen, setMenuOpen }) => {
   }, []);
 
   return (
-    <header className={scrolled ? "scrolled" : undefined}>
+    <header
+      className={
+        scrolled && scrollDir === "down"
+          ? "scrolled down"
+          : scrolled && scrollDir === "up"
+          ? "scrolled up"
+          : undefined
+      }
+    >
       <div className="container">
         <nav>
           <div className="logo">
