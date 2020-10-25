@@ -3,6 +3,7 @@ import { SectionHeader } from "../SectionHeader";
 import { Hero } from "../sections/Hero";
 import { About } from "../sections/About";
 import { Contact } from "../sections/Contact";
+import { Projects } from "../sections/Projects";
 
 export const Content = () => {
   return (
@@ -17,6 +18,12 @@ export const Content = () => {
             <About />
           </div>
         </section>
+        {/* <section className="projects section">
+          <SectionHeader number={2}>Meine Arbeit</SectionHeader>
+          <div className="section__inner">
+            <Projects />
+          </div>
+        </section> */}
         <section className="contact section">
           <SectionHeader number={3}>Kontakt</SectionHeader>
           <div className="section__inner">
