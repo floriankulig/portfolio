@@ -1,12 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Button } from "../Button";
 import { navLinks } from "../../constants";
 import { ReactComponent as Logo } from "../../images/logo-header.svg";
-import { useScrollDir } from "../../hooks";
+import { useOnClickOutside, useScrollDir } from "../../hooks";
 
 export const Header = ({ menuOpen, setMenuOpen }) => {
   const [scrolled, setScrolled] = useState(false);
   const scrollDir = useScrollDir("down");
+
+  const ref = useRef();
+  useOnClickOutside(ref, () => setMenuOpen(false));
 
   const handleScroll = () => {
     setScrolled(window.pageYOffset >= 50);
@@ -27,6 +30,7 @@ export const Header = ({ menuOpen, setMenuOpen }) => {
           ? "scrolled down"
           : undefined
       }
+      ref={ref}
     >
       <div className="container">
         <nav>
