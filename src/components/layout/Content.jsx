@@ -18,12 +18,12 @@ export const Content = () => {
             <About />
           </div>
         </section>
-        {/* <section className="projects section">
-          <SectionHeader number={2}>Meine Arbeit</SectionHeader>
+        <section className="projects section">
+          <SectionHeader number={2}>Meine Projekte</SectionHeader>
           <div className="section__inner">
             <Projects />
           </div>
-        </section> */}
+        </section>
         <section className="contact section">
           <SectionHeader number={3}>Kontakt</SectionHeader>
           <div className="section__inner">
