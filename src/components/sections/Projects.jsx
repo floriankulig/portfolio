@@ -7,7 +7,7 @@ export const Projects = () => {
     <ul className="projects__list">
       {projects &&
         projects.map((project) => (
-          <li className="project" key={project.title}>
+          <li key={project.title}>
             <Project project={project} />
           </li>
         ))}
