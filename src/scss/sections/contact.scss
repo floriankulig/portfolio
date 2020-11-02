@@ -15,6 +15,7 @@ section.contact {
   }
 
   .snackbar {
+    z-index: 1000;
     position: fixed;
     background: $background;
     padding: 10px 20px;
@@ -24,6 +25,7 @@ section.contact {
     left: 50px;
     transform: translateY(400px);
     width: clamp(20px, 75vw, 400px);
+    opacity: 0;
     @include no-select();
     @include mq($mq-small) {
       width: fit-content;
@@ -36,6 +38,7 @@ section.contact {
         transform: translateX(0);
       }
       transform: translateY(0);
+      opacity: 1;
     }
     &__message {
       font-family: "Open Sans", sans-serif;
