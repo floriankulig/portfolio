@@ -6,6 +6,7 @@ $text-color: lighten($text, 70%);
   grid-template-columns: repeat(12, 1fr);
   align-items: center;
   max-width: 600px;
+  margin: 3em 0 5em;
 
   img,
   &__desc {
@@ -52,14 +53,18 @@ $text-color: lighten($text, 70%);
 
     &-links {
       margin-top: 2em;
-      svg {
-        color: $header-color;
-        width: 25px;
-        height: 25px;
-        margin-right: 2em;
-        transition: 0.25s all $easing;
-        &:hover {
-          color: $accent;
+      a {
+        cursor: default;
+        svg {
+          cursor: pointer;
+          color: $header-color;
+          width: 25px;
+          height: 25px;
+          margin-right: 2em;
+          transition: 0.25s all $easing;
+          &:hover {
+            color: $accent;
+          }
         }
       }
     }
