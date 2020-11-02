@@ -14,9 +14,9 @@ export const Project = ({ project }) => {
                 ))}
 
                 <ul className="project__desc-links">
-                    <a href={url} target="_blank" rel="noopener noreferrer">
+                    {url && <a href={url} target="_blank" rel="noopener noreferrer">
                         <FaExternalLinkAlt />
-                    </a>
+                    </a>}
                     <a href={github} target="_blank" rel="noopener noreferrer">
                         <FaGithub />
                     </a>
