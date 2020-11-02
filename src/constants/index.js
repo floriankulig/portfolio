@@ -22,7 +22,7 @@ export const projects = [
     techStack: ["Python", "Tkinter"],
     github: "https://github.com/floriankulig/SortingVisualizer",
     url: "",
-    img: null,
+    img: "sortvis.png",
   },
 ];
 
