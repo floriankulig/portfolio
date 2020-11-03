@@ -17,9 +17,12 @@ export const Header = ({ menuOpen, setMenuOpen }) => {
 
   useEffect(() => {
     document.addEventListener("scroll", handleScroll);
+    menuOpen
+      ? (document.body.style.overflow = "hidden")
+      : (document.body.style.overflow = null);
 
     return () => document.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [menuOpen]);
 
   return (
     <header
