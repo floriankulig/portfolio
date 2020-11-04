@@ -62,7 +62,6 @@ export const Header = ({ menuOpen, setMenuOpen }) => {
                   </li>
                 )
               )}
-            <li></li>
           </ul>
           <div
             className={menuOpen ? "burger open" : "burger"}
