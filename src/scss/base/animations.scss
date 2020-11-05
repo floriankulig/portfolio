@@ -46,3 +46,13 @@
   opacity: 0;
   animation: fadeUp 0.4s $easing forwards;
 }
+
+[data-scroll] {
+  transition: all 0.5s ease-out;
+  opacity: 0;
+  transform: translateY(75px);
+}
+[data-scroll="in"] {
+  transform: translateY(0px);
+  opacity: 1;
+}
