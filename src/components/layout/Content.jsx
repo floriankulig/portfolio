@@ -12,19 +12,19 @@ export const Content = () => {
         <section className="hero">
           <Hero />
         </section>
-        <section className="about section">
+        <section className="about section" id="about">
           <SectionHeader number={1}>Über mich</SectionHeader>
           <div className="section__inner">
             <About />
           </div>
         </section>
-        <section className="projects section">
+        <section className="projects section" id="projects">
           <SectionHeader number={2}>Meine Projekte</SectionHeader>
           <div className="section__inner">
             <Projects />
           </div>
         </section>
-        <section className="contact section">
+        <section className="contact section" id="contact">
           <SectionHeader number={3}>Kontakt</SectionHeader>
           <div className="section__inner">
             <Contact />
