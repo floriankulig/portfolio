@@ -48,6 +48,8 @@ export const Header = ({ menuOpen, setMenuOpen }) => {
                     className="nav-link"
                     style={{ animationDelay: `${i / 9 + 0.3}s` }}
                     key={name}
+                    onClick={() => setMenuOpen(false)}
+                    onKeyDown={() => setMenuOpen(false)}
                   >
                     <span className="link-idx">0{i + 1}. </span>
                     <a href={url}>{name}</a>
