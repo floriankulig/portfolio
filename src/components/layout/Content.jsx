@@ -12,19 +12,19 @@ export const Content = () => {
         <section className="hero">
           <Hero />
         </section>
-        <section className="about section" id="about">
+        <section className="about section" id="about" data-scroll>
           <SectionHeader number={1}>Über mich</SectionHeader>
           <div className="section__inner">
             <About />
           </div>
         </section>
-        <section className="projects section" id="projects">
+        <section className="projects section" id="projects" data-scroll>
           <SectionHeader number={2}>Meine Projekte</SectionHeader>
           <div className="section__inner">
             <Projects />
           </div>
         </section>
-        <section className="contact section" id="contact">
+        <section className="contact section" id="contact" data-scroll>
           <SectionHeader number={3}>Kontakt</SectionHeader>
           <div className="section__inner">
             <Contact />
