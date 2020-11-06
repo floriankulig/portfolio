@@ -37,9 +37,9 @@ export const Header = ({ menuOpen, setMenuOpen }) => {
     >
       <div className="container">
         <nav>
-          <div className="logo">
+          <a className="logo" href="/" aria-label="Reload Page">
             <Logo />
-          </div>
+          </a>
           <ul className={menuOpen ? "nav-links active" : "nav-links"}>
             {navLinks &&
               navLinks.map(({ url, name }, i) =>
@@ -51,8 +51,10 @@ export const Header = ({ menuOpen, setMenuOpen }) => {
                     onClick={() => setMenuOpen(false)}
                     onKeyDown={() => setMenuOpen(false)}
                   >
-                    <span className="link-idx">0{i + 1}. </span>
-                    <a href={url}>{name}</a>
+                    <a href={url}>
+                      <span className="link-idx">0{i + 1}. </span>
+                      {name}
+                    </a>
                   </li>
                 ) : (
                   <li
