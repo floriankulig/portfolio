@@ -1,7 +1,7 @@
 export const navLinks = [
-  { name: "Über Mich", url: "/#about" },
-  { name: "Projekte", url: "/#projects" },
-  { name: "Kontakt", url: "/#contact" },
+  { name: "Über Mich", url: "portfolio/#about" },
+  { name: "Projekte", url: "portfolio/#projects" },
+  { name: "Kontakt", url: "portfolio/#contact" },
   { name: "Lebenslauf", url: "/resume.pdf" },
 ];
 
