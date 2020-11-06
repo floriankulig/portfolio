@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { copyToClipboard } from "../../helpers";
 import { Button } from "../Button";
-import { overlayDuration, email } from "../../constants";
+import { email } from "../../constants";
 
 export const Contact = () => {
   const [snackbarOpen, setSnackbarOpen] = useState(false);
