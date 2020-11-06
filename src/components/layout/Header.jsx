@@ -15,6 +15,17 @@ export const Header = ({ menuOpen, setMenuOpen }) => {
     setScrolled(window.pageYOffset >= 50);
   };
 
+  const handleLinkClick = (linkUrl) => {
+    setMenuOpen(false);
+    const timeout = setTimeout(
+      () =>
+        document.querySelector(linkUrl).scrollIntoView({ behavior: "smooth" }),
+      300
+    );
+
+    return () => clearTimeout(timeout);
+  };
+
   useEffect(() => {
     document.addEventListener("scroll", handleScroll);
     menuOpen
@@ -48,13 +59,11 @@ export const Header = ({ menuOpen, setMenuOpen }) => {
                     className="nav-link"
                     style={{ animationDelay: `${i / 9 + 0.3}s` }}
                     key={name}
-                    onClick={() => setMenuOpen(false)}
-                    onKeyDown={() => setMenuOpen(false)}
+                    onClick={() => handleLinkClick(url)}
+                    onKeyDown={() => handleLinkClick(url)}
                   >
-                    <a href={url}>
-                      <span className="link-idx">0{i + 1}. </span>
-                      {name}
-                    </a>
+                    <span className="link-idx">0{i + 1}. </span>
+                    {name}
                   </li>
                 ) : (
                   <li
