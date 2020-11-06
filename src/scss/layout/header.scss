@@ -31,6 +31,7 @@ header {
     .logo {
       color: $accent;
       transition: 0.25s all $easing;
+      cursor: pointer;
       svg {
         width: 45px;
         height: 45px;
@@ -62,17 +63,19 @@ header {
       .nav-link {
         opacity: 0;
         font-weight: bold;
-        color: $accent;
         cursor: pointer;
+        text-decoration: none;
         transition: 0.25s all $easing;
         animation: fadeDown 0.25s $easing forwards;
 
         a {
           color: $text;
-          text-decoration: none;
-        }
-        a:hover {
-          color: $accent;
+          span {
+            color: $accent;
+          }
+          &:hover {
+            color: $accent;
+          }
         }
       }
 
