@@ -15,37 +15,19 @@ section.contact {
   }
 
   .snackbar {
-    z-index: 1000;
-    position: fixed;
-    background: $background;
-    padding: 10px 20px;
-    border: 2px solid $primary;
-    border-radius: 13px;
-    bottom: 50px;
-    left: 50px;
-    transform: translateY(400px);
-    width: clamp(20px, 75vw, 400px);
-    opacity: 0;
-    @include no-select();
-    @include mq($mq-small) {
-      width: fit-content;
-      transform: translateX(-400px);
-    }
-
+    display: none;
     transition: 0.25s all $easing;
+
     &.open {
-      @include mq($mq-small) {
-        transform: translateX(0);
-      }
-      transform: translateY(0);
+      visibility: visible;
       opacity: 1;
+      transform: translateX(0);
     }
     &__message {
       font-family: "Open Sans", sans-serif;
       margin: 0;
       font-weight: bold;
       color: $text;
-      position: relative;
     }
   }
 }

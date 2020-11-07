@@ -5,12 +5,12 @@ import { email } from "../../constants";
 
 export const Contact = () => {
   const [snackbarOpen, setSnackbarOpen] = useState(false);
+
   const handleEmailClick = () => {
     copyToClipboard(email);
     setSnackbarOpen(true);
-    //+ 500: basic slideIn/Out animation duration
-    setTimeout(() => setSnackbarOpen(false), 5000);
-    clearTimeout();
+    const timeout = setTimeout(() => setSnackbarOpen(false), 5000);
+    return () => clearTimeout(timeout);
   };
 
   return (
