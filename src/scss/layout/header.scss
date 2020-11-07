@@ -67,15 +67,13 @@ header {
         text-decoration: none;
         transition: 0.25s all $easing;
         animation: fadeDown 0.25s $easing forwards;
+        color: $text;
 
-        a {
-          color: $text;
-          span {
-            color: $accent;
-          }
-          &:hover {
-            color: $accent;
-          }
+        span {
+          color: $accent;
+        }
+        &:hover {
+          color: $accent;
         }
       }
 
