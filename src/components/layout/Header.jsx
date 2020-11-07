@@ -48,7 +48,7 @@ export const Header = ({ menuOpen, setMenuOpen }) => {
     >
       <div className="container">
         <nav>
-          <a className="logo" href="/" aria-label="Reload Page">
+          <a className="logo" href="./portfolio" aria-label="Reload Page">
             <Logo />
           </a>
           <ul className={menuOpen ? "nav-links active" : "nav-links"}>
