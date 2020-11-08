@@ -68,6 +68,7 @@ header {
         transition: 0.25s all $easing;
         animation: fadeDown 0.25s $easing forwards;
         color: $text;
+        @include no-select();
 
         span {
           color: $accent;
