@@ -50,7 +50,7 @@
 [data-scroll] {
   transition: all 0.5s ease-out;
   opacity: 0;
-  transform: translateY(75px);
+  transform: translateY(150px);
 }
 [data-scroll="in"] {
   transform: translateY(0px);

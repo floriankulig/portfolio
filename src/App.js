@@ -9,7 +9,7 @@ export const App = () => {
   useEffect(() => {
     ScrollOut({
       once: true,
-      threshold: 0.5,
+      threshold: 0.4,
     });
   }, []);
 
