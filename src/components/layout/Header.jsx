@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Button } from "../Button";
 import { navLinks } from "../../constants";
-import { ReactComponent as Logo } from "../../images/logo-header.svg";
+import { ReactComponent as Logo } from "../../images/logo.svg";
 import { useOnClickOutside, useScrollDir } from "../../hooks";
 
 export const Header = ({ menuOpen, setMenuOpen }) => {
