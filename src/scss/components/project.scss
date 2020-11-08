@@ -20,13 +20,13 @@ $text-color: lighten($text, 70%);
   }
 
   &__desc {
-    background-color: rgba($primary-dark, 0.75);
+    background-color: rgba(#503e9d, 0.8);
     z-index: 2;
     padding: 3em 2em;
     transition: 0.25s all $easing;
-    &:hover {
-      background-color: rgba($primary-dark, 0.7);
-    }
+    // &:hover {
+    //   background-color: rgba(#503e9d, 0.75);
+    // }
 
     &-title {
       font-size: clamp(24px, 3vw, 32px);
