@@ -1,12 +1,23 @@
 $header-color: #f4ecff;
 $text-color: lighten($text, 70%);
+$overlay-color: darken($accent, 25%);
 
 .project {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   align-items: center;
+  width: 100%;
   max-width: 600px;
   margin: 3em 0 5em;
+  max-height: 500px;
+  &:hover {
+    .project__desc {
+      background-color: rgba($overlay-color, 0.7);
+    }
+    img {
+      // opacity: 0.4;
+    }
+  }
 
   img,
   &__desc {
@@ -17,16 +28,14 @@ $text-color: lighten($text, 70%);
     margin-bottom: 0;
     grid-column: 1 / -1;
     grid-row: 1 / -1;
+    transition: 0.25s all $easing;
   }
 
   &__desc {
-    background-color: rgba(#503e9d, 0.8);
+    background-color: rgba($overlay-color, 0.75); //#503e9d
     z-index: 2;
     padding: 3em 2em;
     transition: 0.25s all $easing;
-    // &:hover {
-    //   background-color: rgba(#503e9d, 0.75);
-    // }
 
     &-title {
       font-size: clamp(24px, 3vw, 32px);
@@ -52,7 +61,10 @@ $text-color: lighten($text, 70%);
     }
 
     &-links {
-      margin-top: 2em;
+      margin-top: 1em;
+      @include mq($mq-small) {
+        margin-top: 2em;
+      }
       a {
         cursor: default;
         svg {
