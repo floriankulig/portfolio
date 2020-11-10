@@ -1,14 +1,14 @@
 <svg class="logo-icon" width="650" height="736" viewBox="0 0 650 736" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path class="logo-icon__triangle"d="M295 506L182.5 570.952L182.5 441.048L295 506Z" fill="#5619EA"/>
-<path class="logo-icon__triangle"d="M182 441L294.5 376.048V505.952L182 441Z" fill="#6730EC"/>
-<path class="logo-icon__triangle"d="M422 166L309.5 230.952V101.048L422 166Z" fill="#6730EC"/>
-<path class="logo-icon__triangle"d="M295 376L182.5 440.952L182.5 311.048L295 376Z" fill="#7847EE"/>
-<path class="logo-icon__triangle"d="M309 231L421.5 166.048V295.952L309 231Z" fill="#7847EE"/>
-<path class="logo-icon__triangle"d="M197 166L309.5 101.048V230.952L197 166Z" fill="#7847EE"/>
-<path class="logo-icon__triangle"d="M182 311L294.5 246.048V375.952L182 311Z" fill="#5619EA"/>
-<path class="logo-icon__triangle"d="M427 441L314.5 505.952V376.048L427 441Z" fill="#5619EA"/>
-<path class="logo-icon__triangle"d="M534 231L421.5 295.952V166.048L534 231Z" fill="#5619EA"/>
-<path class="logo-icon__triangle"d="M295 246L182.5 310.952V181.048L295 246Z" fill="#6730EC"/>
-<path class="logo-icon__triangle"d="M182 571L294.5 506.048V635.952L182 571Z" fill="#7847EE"/>
+<path class="logo-icon__triangle" d="M295 506L182.5 570.952L182.5 441.048L295 506Z" fill="#5619EA"/>
+<path class="logo-icon__triangle" d="M182 441L294.5 376.048V505.952L182 441Z" fill="#6730EC"/>
+<path class="logo-icon__triangle" d="M422 166L309.5 230.952V101.048L422 166Z" fill="#6730EC"/>
+<path class="logo-icon__triangle" d="M295 376L182.5 440.952L182.5 311.048L295 376Z" fill="#7847EE"/>
+<path class="logo-icon__triangle" d="M309 231L421.5 166.048V295.952L309 231Z" fill="#7847EE"/>
+<path class="logo-icon__triangle" d="M197 166L309.5 101.048V230.952L197 166Z" fill="#7847EE"/>
+<path class="logo-icon__triangle" d="M182 311L294.5 246.048V375.952L182 311Z" fill="#5619EA"/>
+<path class="logo-icon__triangle" d="M427 441L314.5 505.952V376.048L427 441Z" fill="#5619EA"/>
+<path class="logo-icon__triangle" d="M534 231L421.5 295.952V166.048L534 231Z" fill="#5619EA"/>
+<path class="logo-icon__triangle" d="M295 246L182.5 310.952V181.048L295 246Z" fill="#6730EC"/>
+<path class="logo-icon__triangle" d="M182 571L294.5 506.048V635.952L182 571Z" fill="#7847EE"/>
 <path class="logo-icon__hexagon" d="M338 29.3731L611.76 187.428C619.804 192.073 624.76 200.656 624.76 209.945V526.055C624.76 535.344 619.804 543.927 611.76 548.572L338 706.627C329.956 711.271 320.044 711.271 312 706.627L38.2405 548.572C30.196 543.927 25.2405 535.344 25.2405 526.055V209.945C25.2405 200.656 30.196 192.073 38.2405 187.428L312 29.3731C320.044 24.7286 329.956 24.7286 338 29.3731Z" stroke="#6730EC" stroke-width="50"/>
 </svg>
