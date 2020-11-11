@@ -1,0 +1,23 @@
+$hexagon-timing: 0.5s;
+
+.loading-view {
+  width: 100vw;
+  height: 100vh;
+
+  .logo-icon {
+    position: absolute;
+    width: 7em;
+    height: 100%;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+
+    &__hexagon {
+      stroke-linecap: round;
+      stroke-dasharray: 2400;
+      stroke-dashoffset: 2400;
+      animation: svgOutlineAnimation 1.5s $easing forwards;
+      animation-delay: $hexagon-timing;
+    }
+  }
+}
