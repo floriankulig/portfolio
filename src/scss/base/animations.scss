@@ -20,6 +20,18 @@
   }
 }
 
+@keyframes svgOutlineAnimation {
+  from {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
 @keyframes fadeDown {
   from {
     transform: translateY(-100%);
