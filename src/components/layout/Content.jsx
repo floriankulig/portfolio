@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { SectionHeader } from "../SectionHeader";
 import { Hero } from "../sections/Hero";
 import { About } from "../sections/About";
 import { Contact } from "../sections/Contact";
 import { Projects } from "../sections/Projects";
+import { scrollAppearConfig } from "../../helpers";
 
 export const Content = () => {
+  useEffect(() => scrollAppearConfig(), []);
+
   return (
     <div className="container content">
       <main className="main-col">
