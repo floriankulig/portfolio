@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import ScrollOut from "scroll-out";
 import "./scss/App.scss";
 import { Header } from "./components/layout/Header";
 import { Content } from "./components/layout/Content";
@@ -17,15 +16,6 @@ export const App = () => {
     }, 5000);
     return () => clearTimeout(timeout);
   }, []);
-
-  useEffect(() => {
-    if (!loading) {
-      ScrollOut({
-        once: true,
-        threshold: 0.4,
-      });
-    }
-  }, [loading]);
 
   return loading ? (
     <Loading loading />
