@@ -106,6 +106,8 @@ header {
       }
       cursor: pointer;
       z-index: 9000;
+      opacity: 0;
+      animation: fadeVisible 0.25s $easing forwards;
 
       &:hover,
       &.open {
