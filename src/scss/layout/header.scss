@@ -35,6 +35,8 @@ header {
       svg {
         width: 45px;
         height: 45px;
+        opacity: 0;
+        animation: fadeVisible 0.25s $easing forwards;
       }
     }
 
