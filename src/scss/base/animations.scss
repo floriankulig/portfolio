@@ -22,6 +22,19 @@
   }
 }
 
+@keyframes fadeVisible {
+  to {
+    fill-opacity: 1;
+  }
+}
+
+@keyframes shrinkInvisible {
+  to {
+    transform: translate(-50%, -50%) scale(0.1);
+    opacity: 0;
+  }
+}
+
 // General fading animations
 @keyframes fadeDown {
   from {
