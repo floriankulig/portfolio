@@ -1,4 +1,7 @@
+// timing delays for logo animations
+$logo-timing: 4.5s;
 $hexagon-timing: 0.5s;
+$triangle-timing: 2.25s;
 
 .loading-view {
   width: 100vw;
@@ -10,7 +13,10 @@ $hexagon-timing: 0.5s;
     height: 100%;
     top: 50vh;
     left: 50vw;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    animation: shrinkInvisible 0.5s $easing forwards;
+    animation-delay: $logo-timing;
 
     &__hexagon {
       stroke-linecap: round;
@@ -18,6 +24,12 @@ $hexagon-timing: 0.5s;
       stroke-dashoffset: 2400;
       animation: svgOutlineAnimation 1.5s $easing forwards;
       animation-delay: $hexagon-timing;
+    }
+
+    &__triangle {
+      fill-opacity: 0;
+      animation: fadeVisible 0.35s $easing forwards;
+      animation-delay: $triangle-timing;
     }
   }
 }
