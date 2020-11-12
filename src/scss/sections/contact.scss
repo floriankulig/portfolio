@@ -24,7 +24,7 @@ section.contact {
       transform: translateX(0);
     }
     &__message {
-      font-family: "Open Sans", sans-serif;
+      font-family: $font-secondary;
       margin: 0;
       font-weight: bold;
       color: $text;

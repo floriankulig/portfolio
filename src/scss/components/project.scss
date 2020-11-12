@@ -42,7 +42,7 @@ $overlay-color: darken($accent, 25%);
 
     &-info,
     span {
-      font-family: "Open Sans", sans-serif;
+      font-family: $font-secondary;
       color: $text-color;
     }
     &-info {
