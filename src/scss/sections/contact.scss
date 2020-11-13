@@ -13,21 +13,4 @@ section.contact {
   .btn {
     margin-top: 20px;
   }
-
-  .snackbar {
-    display: none;
-    transition: 0.25s all $easing;
-
-    &.open {
-      visibility: visible;
-      opacity: 1;
-      transform: translateX(0);
-    }
-    &__message {
-      font-family: $font-secondary;
-      margin: 0;
-      font-weight: bold;
-      color: $text;
-    }
-  }
 }
