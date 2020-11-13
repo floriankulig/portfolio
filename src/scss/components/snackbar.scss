@@ -1,11 +1,13 @@
 .snackbar {
   position: fixed;
-  border: 2px solid $primary;
+  border: 1px solid $primary;
   border-radius: 10px;
   padding: 0.8em 1.5em;
   background: $background;
   bottom: 50px;
   left: 50px;
+  text-align: center;
+  box-shadow: $generic-box-shadow;
   transform: translateX(-300px);
   opacity: 0;
   animation: snackbarAnimation 5s $easing forwards;
