@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import { createPortal } from "react-dom";
 import { copyToClipboard } from "../../helpers";
 import { Button } from "../Button";
+import { Snackbar } from "../Snackbar";
 import { email } from "../../constants";
 
 export const Contact = () => {
@@ -32,11 +34,11 @@ export const Contact = () => {
         <Button basic={true}>Hallo sagen</Button>
       </a>
 
-      <div className={snackbarOpen ? "snackbar open" : "snackbar"}>
-        <p className="snackbar__message">
-          Email in die Zwischenablage kopiert!
-        </p>
-      </div>
+      {snackbarOpen &&
+        createPortal(
+          <Snackbar>Email in die Zwischenablage kopiert!</Snackbar>,
+          document.getElementById("overlay-entry")
+        )}
     </>
   );
 };
