@@ -20,10 +20,11 @@ export const App = () => {
   return loading ? (
     <Loading loading />
   ) : (
-    <>
-      <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <Content />
-      <Footer />
-    </>
-  );
+      <>
+        <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        <Content />
+        <div id="overlay-entry"></div>
+        <Footer />
+      </>
+    );
 };
