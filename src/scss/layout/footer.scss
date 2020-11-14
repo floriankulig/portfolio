@@ -1,0 +1,23 @@
+footer {
+  height: 40px;
+  font-family: $font-secondary;
+  font-size: 0.95rem;
+  .container {
+    height: 100%;
+    text-align: center;
+    a {
+      transition: 0.25s all $easing;
+      color: $text;
+
+      svg {
+        width: 15px;
+        height: 15px;
+        color: $accent;
+        transform: translateY(2px);
+      }
+      &:hover {
+        color: $accent;
+      }
+    }
+  }
+}
