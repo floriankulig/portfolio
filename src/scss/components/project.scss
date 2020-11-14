@@ -72,7 +72,7 @@ $overlay-color: darken($accent, 25%);
           margin-right: 2em;
           transition: 0.25s all $easing;
           &:hover {
-            color: $accent;
+            color: $primary-dark;
           }
         }
       }
