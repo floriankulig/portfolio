@@ -1,3 +1,5 @@
+export const mode = "prod";
+
 export const navLinks = [
   { name: "Über Mich", url: "#about" },
   { name: "Projekte", url: "#projects" },

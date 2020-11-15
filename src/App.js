@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./scss/App.scss";
+import { mode } from "./constants";
 import { Header } from "./components/layout/Header";
 import { Content } from "./components/layout/Content";
 import { Footer } from "./components/layout/Footer";
@@ -17,7 +18,7 @@ export const App = () => {
     return () => clearTimeout(timeout);
   }, []);
 
-  return loading ? (
+  return loading && mode !== "dev" ? (
     <Loading />
   ) : (
     <>
