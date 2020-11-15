@@ -9,20 +9,6 @@
   }
 }
 
-@keyframes snackbarAnimation {
-  5% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-  95% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-  to {
-    transform: translateX(-300px);
-  }
-}
-
 // Svg Logo animations
 @keyframes svgOutlineAnimation {
   from {
