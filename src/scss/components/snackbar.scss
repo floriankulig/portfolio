@@ -10,7 +10,12 @@
   box-shadow: $generic-box-shadow;
   transform: translateX(-300px);
   opacity: 0;
-  animation: snackbarAnimation 5s $easing forwards;
+  transition: 0.4s all $easing;
+
+  &.open {
+    transform: translateX(0px);
+    opacity: 1;
+  }
 
   &__message {
     font-family: $font-secondary;
