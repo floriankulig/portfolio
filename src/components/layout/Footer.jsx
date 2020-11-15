@@ -5,7 +5,7 @@ export const Footer = () => {
   return (
     <footer>
       <div className="container">
-        <a href="https://github.com/floriankulig/portfolio" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/floriankulig/portfolio" rel="noopener noreferrer">
           Built with <FaHeart /> by Florian Kulig
         </a>
       </div>
