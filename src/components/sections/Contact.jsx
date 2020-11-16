@@ -24,6 +24,8 @@ export const Contact = () => {
           className="contact__mail"
           onClick={() => handleEmailClick()}
           onKeyDown={() => handleEmailClick()}
+          role="button"
+          aria-label="Copy email address to clipboard"
         >
           {email}
         </span>{" "}
