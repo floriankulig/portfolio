@@ -27,10 +27,13 @@ export const Header = ({ menuOpen, setMenuOpen }) => {
   };
 
   useEffect(() => {
-    document.addEventListener("scroll", handleScroll);
     menuOpen
       ? (document.body.style.overflow = "hidden")
       : (document.body.style.overflow = null);
+
+    if (!menuOpen) {
+      document.addEventListener("scroll", handleScroll);
+    }
 
     return () => document.removeEventListener("scroll", handleScroll);
   }, [menuOpen]);
@@ -41,8 +44,8 @@ export const Header = ({ menuOpen, setMenuOpen }) => {
         scrolled && scrollDir === "down"
           ? "scrolled up"
           : scrolled && scrollDir === "up"
-          ? "scrolled down"
-          : undefined
+            ? "scrolled down"
+            : undefined
       }
       ref={ref}
     >
@@ -66,14 +69,14 @@ export const Header = ({ menuOpen, setMenuOpen }) => {
                     {name}
                   </li>
                 ) : (
-                  <li
-                    className="nav-link"
-                    style={{ animationDelay: `${i / 9 + 0.3}s` }}
-                    key={name}
-                  >
-                    <Button basic={false}>{name}</Button>
-                  </li>
-                )
+                    <li
+                      className="nav-link"
+                      style={{ animationDelay: `${i / 9 + 0.3}s` }}
+                      key={name}
+                    >
+                      <Button basic={false}>{name}</Button>
+                    </li>
+                  )
               )}
           </ul>
           <div
