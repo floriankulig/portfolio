@@ -4,11 +4,11 @@ export const Snackbar = ({ children }) => {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    const timeout1 = setTimeout(() => setOpen(true), 1);
-    const timeout2 = setTimeout(() => setOpen(false), 4600);
+    const openTimeout = setTimeout(() => setOpen(true), 10);
+    const closeTimeout = setTimeout(() => setOpen(false), 4600);
     return () => {
-      clearTimeout(timeout1);
-      clearTimeout(timeout2);
+      clearTimeout(openTimeout);
+      clearTimeout(closeTimeout);
     };
   }, []);
 
