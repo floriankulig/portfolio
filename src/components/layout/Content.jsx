@@ -5,9 +5,11 @@ import { About } from "../sections/About";
 import { Contact } from "../sections/Contact";
 import { Projects } from "../sections/Projects";
 import { scrollAppearConfig } from "../../helpers";
+import { useTranslation } from "react-i18next";
 
 export const Content = () => {
   useEffect(() => scrollAppearConfig(), []);
+  const { t, i18n } = useTranslation("common");
 
   return (
     <div className="container content">
@@ -16,7 +18,7 @@ export const Content = () => {
           <Hero />
         </section>
         <section className="about section" id="about" data-scroll>
-          <SectionHeader number={1}>Über mich</SectionHeader>
+          <SectionHeader number={1}>{t("about.header")}</SectionHeader>
           <div className="section__inner">
             <About />
           </div>

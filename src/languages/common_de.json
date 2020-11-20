@@ -4,5 +4,16 @@
     "shortDesc": "Ich entwickle für das Web",
     "desc": "Ich bin ein Schüler aus Treuchtlingen, Bayern, der Spaß daran hat designbetonte Websites, Apps und alles, was dazu gehört, zu (designen und) entwickeln.",
     "cta": "In Kontakt treten"
+  },
+  "about": {
+    "header": "Über mich",
+    "p1": "Hallo, ich bin Flo, Schüler und Hobbyentwickler aus Treuchtlingen, Bayern.",
+    "p2": "Mit Hilfe von modernen Web-Technologien gestalte ich Webseiten, Apps und alles, was dazu gehört. Das Ziel ist meistens gleich: Den Nutzern eine detailgetreue und performante Erfahrung bieten.",
+    "p3": "Seit meinem Praktikum bei der Firma Alfmeier setze ich mich mit Software-Engineering auseinander und habe einige Projekte in die Tat umgesetzt.",
+    "p4": "Hier sind ein paar Technologien, die ich in letzter Zeit benutzt habe:"
+  },
+  "resume": {
+    "name": "Resume",
+    "file": "resume_en.pdf"
   }
 }

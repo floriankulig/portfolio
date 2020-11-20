@@ -1,15 +1,18 @@
 import React from "react";
-import { ReactComponent as Coder } from "../../images/coder.svg"
+import { useTranslation } from "react-i18next";
+import { ReactComponent as Coder } from "../../images/coder.svg";
 import { Skills } from "../Skills";
 
 export const About = () => {
+  const { t, i18n } = useTranslation("common");
+
   return (
     <>
       <div className="section__inner-desc">
-        <p>Hallo, ich bin Flo, Schüler und Hobbyentwickler aus Treuchtlingen, Bayern.</p>
-        <p>Mit Hilfe von modernen Web-Technologien gestalte ich Webseiten, Apps und alles, was dazu gehört. Das Ziel ist meistens gleich: Den Nutzern eine detailgetreue und performante Erfahrung bieten.</p>
-        <p>Seit meinem Praktikum bei der Firma Alfmeier setze ich mich mit Software-Engineering auseinander und habe einige Projekte in die Tat umgesetzt. </p>
-        <p>Hier sind ein paar Technologien, die ich in letzter Zeit benutzt habe:</p>
+        <p>{t("about.p1")}</p>
+        <p>{t("about.p2")}</p>
+        <p>{t("about.p3")} </p>
+        <p>{t("about.p4")}</p>
         <Skills />
       </div>
       <div className="section__inner-svg">
