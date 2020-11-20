@@ -74,7 +74,9 @@ export const Header = ({ menuOpen, setMenuOpen }) => {
                       style={{ animationDelay: `${i / 9 + 0.3}s` }}
                       key={name}
                     >
-                      <Button basic={false}>{name}</Button>
+                      <a href="./resume.pdf">
+                        <Button basic={false}>{name}</Button>
+                      </a>
                     </li>
                   )
               )}
