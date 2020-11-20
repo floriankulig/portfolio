@@ -4,9 +4,11 @@ import { copyToClipboard } from "../../helpers";
 import { Button } from "../Button";
 import { Snackbar } from "../Snackbar";
 import { email } from "../../constants";
+import { useTranslation } from "react-i18next";
 
 export const Contact = () => {
   const [snackbarOpen, setSnackbarOpen] = useState(false);
+  const { t, i18n } = useTranslation("common");
 
   const handleEmailClick = () => {
     copyToClipboard(email);
@@ -18,8 +20,7 @@ export const Contact = () => {
   return (
     <>
       <p>
-        Überzeugt vom Portfolio? Fragen zu mir? Egal, was es ist, mein Postfach
-        steht Ihnen offen. Schreiben Sie eine Mail an{" "}
+        {t("contact.p1")}{" "}
         <span
           className="contact__mail"
           onClick={() => handleEmailClick()}
@@ -29,11 +30,11 @@ export const Contact = () => {
         >
           {email}
         </span>{" "}
-        oder klicken Sie unten.
+        {t("contact.p2")}
       </p>
 
       <a href={`mailto:${email}`}>
-        <Button basic={true}>Hallo sagen</Button>
+        <Button basic={true}>{t("contact.cta")}</Button>
       </a>
 
       {snackbarOpen &&

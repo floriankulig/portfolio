@@ -30,7 +30,7 @@ export const Content = () => {
           </div>
         </section>
         <section className="contact section" id="contact" data-scroll>
-          <SectionHeader number={3}>Kontakt</SectionHeader>
+          <SectionHeader number={3}>{t("contact.header")}</SectionHeader>
           <div className="section__inner">
             <Contact />
           </div>

@@ -12,6 +12,12 @@
     "p3": "Since my internship at the company Alfmeier, I've been following Software-Engineering with great interest while realizing own projects on the side.",
     "p4": "Here are a few technologies I have recently worked with:"
   },
+  "contact": {
+    "header": "Contact",
+    "p1": "Convinced by the portfolio? Questions for me? No matter what you want to know, my inbox is always open. Write an e-mail to",
+    "p2": "or press the button below.",
+    "cta": "Say hello"
+  },
   "resume": {
     "name": "Resume",
     "file": "resume_en.pdf"
