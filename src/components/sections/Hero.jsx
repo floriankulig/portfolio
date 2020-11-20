@@ -1,21 +1,22 @@
 import React from "react";
 import { Button } from "../Button";
 import { email } from "../../constants";
+import { useTranslation } from "react-i18next";
 
 export const Hero = () => {
+  const { t, i18n } = useTranslation("common");
   return (
     <>
-      <h3 className="introduction fade-up">Hallo, ich bin</h3>
+      <h3 className="introduction fade-up">{t("hero.greet")}</h3>
       <h1 className="fade-up">Florian Kulig.</h1>
-      <h1 className="short-desc fade-up">Ich entwickle für das Web.</h1>
-      <p className="desc fade-up">
-        Ich bin ein Schüler aus Treuchtlingen, Bayern, der Spaß daran hat
+      <h1 className="short-desc fade-up">{t("hero.shortDesc")}.</h1>
+      {/* Ich bin ein Schüler aus Treuchtlingen, Bayern, der Spaß daran hat
         designbetonte Websites, Apps und alles, was dazu gehört, zu (designen
-        und) entwickeln.
-      </p>
+        und) entwickeln. */}
+      <p className="desc fade-up">{t("hero.desc")}</p>
       <a href={`mailto:${email}`}>
         <Button className="cta fade-up" basic={true}>
-          In Kontakt treten
+          {t("hero.cta")}
         </Button>
       </a>
     </>
