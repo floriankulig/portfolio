@@ -3,9 +3,10 @@
   bottom: 50px;
   @include mq($mq-big) {
     right: 70px;
+    width: 100px;
   }
   right: 25px;
-  width: 100px;
+  width: 85px;
   height: 30px;
   border: 1px solid grey;
   border-radius: 15px;
