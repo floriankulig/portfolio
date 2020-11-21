@@ -12,6 +12,7 @@
   box-shadow: $generic-box-shadow;
   transition: height 0.25s $easing;
   background-color: $background;
+  animation: fadeVisible 0.25s $easing forwards;
   z-index: 3000;
 
   &.open {
@@ -44,11 +45,11 @@
       border-left: 1px solid grey;
       padding: 5px 10px;
       height: 29px;
+      cursor: pointer;
       svg {
         color: $accent;
         width: 15px;
         margin-top: 2px;
-        cursor: pointer;
         transition: transform 0.3s $easing;
       }
     }
@@ -69,7 +70,7 @@
       z-index: 2000;
       cursor: pointer;
       opacity: 0;
-      animation: fadeVisible 0.25s $easing forwards;
+      animation: fadeVisible 0.4s $easing forwards;
       &:hover {
         background-color: darken($background, 10%);
       }
