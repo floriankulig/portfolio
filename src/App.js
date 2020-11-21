@@ -19,18 +19,14 @@ export const App = () => {
     return () => clearTimeout(timeout);
   }, []);
 
-  return (
+  return loading && mode !== "dev" ? (
+    <Loading />
+  ) : (
     <>
-      {loading && mode !== "dev" ? (
-        <Loading />
-      ) : (
-        <>
-          <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-          <Content />
-          <div id="overlay-entry"></div>
-          <Footer />
-        </>
-      )}
+      <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <Content />
+      <div id="overlay-entry"></div>
+      <Footer />
       <ChangeLanguage />
     </>
   );
