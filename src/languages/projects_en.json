@@ -1,0 +1,20 @@
+{
+  "projects": [
+    {
+      "title": "Todoist Clone",
+      "desc": "A clone of Todoist's Web-App. Users can create own projects, that have their own ToDos assigned to them. These ToDos and projects will be instantly registered in the database and synchronized on all devices signed in.",
+      "techStack": ["React", "Firebase", "SCSS"],
+      "github": "https://github.com/floriankulig/Todoist-Clone/",
+      "url": "https://floriankulig.github.io/Todoist-Clone/",
+      "img": "todoist.png"
+    },
+    {
+      "title": "Sorting Algorithm Visualizer",
+      "desc": "A Desktop-App that visualizes the most popular sorting algorithms. The elements to be sorted are displayed as pillars of different heights. These pillars will then be rearranged according to their values (heights).",
+      "techStack": ["Python", "Tkinter"],
+      "github": "https://github.com/floriankulig/SortingVisualizer",
+      "url": "",
+      "img": "sortvis.png"
+    }
+  ]
+}
