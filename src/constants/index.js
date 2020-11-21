@@ -1,4 +1,4 @@
-export const mode = "dev";
+export const mode = "prod";
 
 export const navLinks = [
   { name: "Über Mich", url: "#about" },
