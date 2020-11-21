@@ -65,7 +65,7 @@ export const useProjects = (lang) => {
 
     setProjects(newProjects.projects);
     console.log(projects);
-  }, [lang]);
+  }, [lang, projects]);
 
   return projects;
 };
