@@ -10,16 +10,17 @@
     "p1": "Hi, I'm Flo, student and hobby-developer from Treuchtlingen, Bavaria.",
     "p2": "With the help of modern and upcoming technologies, I develop websites and apps, always having the same goal: Offering an experience as smooth and detailed as possible.",
     "p3": "Since my internship at the company Alfmeier, I've been following Software-Engineering with great interest while realizing own projects on the side.",
-    "p4": "Here are a few technologies I have recently worked with:"
+    "p4": "Here are a few technologies and tools I have been recently working with:"
   },
   "contact": {
     "header": "Contact",
     "p1": "Convinced by the portfolio? Questions for me? No matter what you want to know, my inbox is always open. Write an e-mail to",
     "p2": "or press the button below.",
-    "cta": "Say hello"
+    "cta": "Say Hello"
   },
   "resume": {
     "name": "Resume",
     "file": "resume_en.pdf"
-  }
+  },
+  "copyClipboard": "Copied e-mail to clipboard!"
 }

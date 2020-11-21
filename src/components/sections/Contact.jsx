@@ -39,7 +39,7 @@ export const Contact = () => {
 
       {snackbarOpen &&
         createPortal(
-          <Snackbar>Email in die Zwischenablage kopiert!</Snackbar>,
+          <Snackbar>{t("copyClipboard")}</Snackbar>,
           document.getElementById("overlay-entry")
         )}
     </>

@@ -21,5 +21,6 @@
   "resume": {
     "name": "Resume",
     "file": "resume_en.pdf"
-  }
+  },
+  "copyClipboard": "E-Mail in die Zwischenablage kopiert!"
 }
