@@ -12,6 +12,9 @@
     "p3": "Seit meinem Praktikum bei der Firma Alfmeier setze ich mich mit Software-Engineering auseinander und habe einige Projekte in die Tat umgesetzt.",
     "p4": "Hier sind ein paar Technologien, die ich in letzter Zeit benutzt habe:"
   },
+  "projects": {
+    "header": "Meine Projekte"
+  },
   "contact": {
     "header": "Kontakt",
     "p1": "Überzeugt vom Portfolio? Fragen zu mir? Egal, was es ist, mein Postfach steht Ihnen offen. Schreiben Sie eine Mail an",

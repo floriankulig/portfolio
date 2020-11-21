@@ -24,7 +24,7 @@ export const Content = () => {
           </div>
         </section>
         <section className="projects section" id="projects" data-scroll>
-          <SectionHeader number={2}>Meine Projekte</SectionHeader>
+          <SectionHeader number={2}>{t("projects.header")}</SectionHeader>
           <div className="section__inner">
             <Projects />
           </div>
