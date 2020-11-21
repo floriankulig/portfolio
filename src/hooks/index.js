@@ -55,3 +55,17 @@ export const useOnClickOutside = (ref, handler) => {
     [ref, handler]
   );
 };
+
+export const useProjects = (lang) => {
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    let newProjects;
+    if (lang) newProjects = require(`../languages/projects_${lang}.json`);
+
+    setProjects(newProjects.projects);
+    console.log(projects);
+  }, [lang]);
+
+  return projects;
+};
