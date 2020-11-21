@@ -13,7 +13,7 @@
   &.open {
     height: 100px;
     .lang-changer__cta {
-      border-bottom: 1px solid grey;
+      border-bottom: 1px solid rgba(grey, 1);
       svg {
         transform: rotate(180deg);
       }
@@ -24,6 +24,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: border-bottom 0.25s $easing;
+    border-bottom: 1px solid rgba(grey, 0);
 
     span {
       text-transform: uppercase;
@@ -36,7 +38,7 @@
     &-toggle-wrapper {
       border-left: 1px solid grey;
       padding: 5px 10px;
-      height: 30px;
+      height: 29px;
       svg {
         width: 15px;
         margin-top: 2px;
@@ -57,9 +59,11 @@
       height: 50%;
       width: 100%;
       padding-left: 15px;
-      padding-top: 7px;
+      padding-top: 8px;
       z-index: 2000;
       cursor: pointer;
+      opacity: 0;
+      animation: fadeVisible 0.25s $easing forwards;
       &:hover {
         background-color: darken($background, 10%);
       }

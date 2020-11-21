@@ -28,12 +28,14 @@ export const ChangeLanguage = () => {
           <li
             onClick={() => handleClick("en")}
             onKeyDown={() => handleClick("en")}
+            style={{ "animationDelay": "0.15s" }}
           >
             English
           </li>
           <li
             onClick={() => handleClick("de")}
             onKeyDown={() => handleClick("de")}
+            style={{ "animationDelay": "0.25s" }}
           >
             Deutsch
           </li>
