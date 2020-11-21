@@ -1,8 +1,12 @@
 import React from "react";
-import { Project } from "../Project";
-import { projects } from "../../constants";
+import i18next from "i18next";
+import { Project } from "../Project"
+import { useProjects } from "../../hooks"
+
 
 export const Projects = () => {
+  const projects = useProjects(i18next.language);
+
   return (
     <ul className="projects__list">
       {projects &&
