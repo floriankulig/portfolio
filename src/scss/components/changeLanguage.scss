@@ -1,13 +1,17 @@
 .lang-changer {
   position: fixed;
   bottom: 50px;
-  right: 70px;
+  @include mq($mq-big) {
+    right: 70px;
+  }
+  right: 25px;
   width: 100px;
   height: 30px;
   border: 1px solid grey;
   border-radius: 15px;
   box-shadow: $generic-box-shadow;
   transition: height 0.25s $easing;
+  background-color: $background;
   z-index: 3000;
 
   &.open {
@@ -34,12 +38,14 @@
       font-size: 15px;
       margin: auto 0;
       font-weight: bold;
+      color: $text;
     }
     &-toggle-wrapper {
       border-left: 1px solid grey;
       padding: 5px 10px;
       height: 29px;
       svg {
+        color: $accent;
         width: 15px;
         margin-top: 2px;
         cursor: pointer;
