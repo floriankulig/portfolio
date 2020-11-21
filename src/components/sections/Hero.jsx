@@ -4,7 +4,7 @@ import { email } from "../../constants";
 import { useTranslation } from "react-i18next";
 
 export const Hero = () => {
-  const { t, i18n } = useTranslation("common");
+  const { t } = useTranslation("common");
   return (
     <>
       <h3 className="introduction fade-up">{t("hero.greet")}</h3>

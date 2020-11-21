@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 
 export const Contact = () => {
   const [snackbarOpen, setSnackbarOpen] = useState(false);
-  const { t, i18n } = useTranslation("common");
+  const { t } = useTranslation("common");
 
   const handleEmailClick = () => {
     copyToClipboard(email);

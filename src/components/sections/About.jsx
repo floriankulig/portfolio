@@ -4,7 +4,7 @@ import { ReactComponent as Coder } from "../../images/coder.svg";
 import { Skills } from "../Skills";
 
 export const About = () => {
-  const { t, i18n } = useTranslation("common");
+  const { t } = useTranslation("common");
 
   return (
     <>

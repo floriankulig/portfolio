@@ -9,7 +9,7 @@ import { useTranslation } from "react-i18next";
 
 export const Content = () => {
   useEffect(() => scrollAppearConfig(), []);
-  const { t, i18n } = useTranslation("common");
+  const { t } = useTranslation("common");
 
   return (
     <div className="container content">
