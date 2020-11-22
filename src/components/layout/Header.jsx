@@ -3,10 +3,12 @@ import { Button } from "../Button";
 import { navLinks } from "../../constants";
 import { ReactComponent as Logo } from "../../images/logo.svg";
 import { useOnClickOutside, useScrollDir } from "../../hooks";
+import { useTranslation } from "react-i18next";
 
 export const Header = ({ menuOpen, setMenuOpen }) => {
   const [scrolled, setScrolled] = useState(false);
   const scrollDir = useScrollDir("down");
+  const { t } = useTranslation("common");
 
   const ref = useRef();
   useOnClickOutside(ref, () => setMenuOpen(false));
@@ -44,8 +46,8 @@ export const Header = ({ menuOpen, setMenuOpen }) => {
         scrolled && scrollDir === "down"
           ? "scrolled up"
           : scrolled && scrollDir === "up"
-            ? "scrolled down"
-            : undefined
+          ? "scrolled down"
+          : undefined
       }
       ref={ref}
     >
@@ -66,19 +68,19 @@ export const Header = ({ menuOpen, setMenuOpen }) => {
                     onKeyDown={() => handleLinkClick(url)}
                   >
                     <span className="link-idx">0{i + 1}. </span>
-                    {name}
+                    {t(`${url.slice(1)}.header`)}
                   </li>
                 ) : (
-                    <li
-                      className="nav-link"
-                      style={{ animationDelay: `${i / 9 + 0.3}s` }}
-                      key={name}
-                    >
-                      <a href="./resume.pdf">
-                        <Button basic={false}>{name}</Button>
-                      </a>
-                    </li>
-                  )
+                  <li
+                    className="nav-link"
+                    style={{ animationDelay: `${i / 9 + 0.3}s` }}
+                    key={name}
+                  >
+                    <a href="./resume.pdf">
+                      <Button basic={false}>{t("resume.name")}</Button>
+                    </a>
+                  </li>
+                )
               )}
           </ul>
           <div

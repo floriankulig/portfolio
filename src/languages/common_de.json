@@ -7,13 +7,15 @@
   },
   "about": {
     "header": "Über mich",
+    "section-header": "Über mich",
     "p1": "Hallo, ich bin Flo, Schüler und Hobbyentwickler aus Treuchtlingen, Bayern.",
     "p2": "Mit Hilfe von modernen Web-Technologien gestalte ich Webseiten, Apps und alles, was dazu gehört. Das Ziel ist meistens gleich: Den Nutzern eine detailgetreue und performante Erfahrung bieten.",
     "p3": "Seit meinem Praktikum bei der Firma Alfmeier setze ich mich mit Software-Engineering auseinander und habe einige Projekte in die Tat umgesetzt.",
     "p4": "Hier sind ein paar Technologien, die ich in letzter Zeit benutzt habe:"
   },
   "projects": {
-    "header": "Meine Projekte"
+    "header": "Projekte",
+    "section-header": "Meine Projekte"
   },
   "contact": {
     "header": "Kontakt",
@@ -22,8 +24,8 @@
     "cta": "Hallo sagen"
   },
   "resume": {
-    "name": "Resume",
-    "file": "resume_en.pdf"
+    "name": "Lebenslauf",
+    "file": "resume_de.pdf"
   },
   "copyClipboard": "E-Mail in die Zwischenablage kopiert!"
 }

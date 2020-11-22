@@ -18,13 +18,15 @@ export const Content = () => {
           <Hero />
         </section>
         <section className="about section" id="about" data-scroll>
-          <SectionHeader number={1}>{t("about.header")}</SectionHeader>
+          <SectionHeader number={1}>{t("about.section-header")}</SectionHeader>
           <div className="section__inner">
             <About />
           </div>
         </section>
         <section className="projects section" id="projects" data-scroll>
-          <SectionHeader number={2}>{t("projects.header")}</SectionHeader>
+          <SectionHeader number={2}>
+            {t("projects.section-header")}
+          </SectionHeader>
           <div className="section__inner">
             <Projects />
           </div>
