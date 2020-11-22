@@ -4,6 +4,7 @@
   border-radius: 10px;
   padding: 0.8em 1.5em;
   background: $background;
+  max-width: 80vw;
   bottom: 50px;
   left: 50px;
   text-align: center;
@@ -11,6 +12,7 @@
   transform: translateX(-300px);
   opacity: 0;
   transition: 0.4s all $easing;
+  z-index: 4000;
 
   &.open {
     transform: translateX(0px);
