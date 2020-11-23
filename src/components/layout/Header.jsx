@@ -66,6 +66,7 @@ export const Header = ({ menuOpen, setMenuOpen }) => {
                     key={name}
                     onClick={() => handleLinkClick(url)}
                     onKeyDown={() => handleLinkClick(url)}
+                    aria-label={`Go to ${url.slice(1)}-section`}
                   >
                     <span className="link-idx">0{i + 1}. </span>
                     {t(`${url.slice(1)}.header`)}
@@ -76,7 +77,7 @@ export const Header = ({ menuOpen, setMenuOpen }) => {
                     style={{ animationDelay: `${i / 9 + 0.3}s` }}
                     key={name}
                   >
-                    <a href="./resume.pdf">
+                    <a href={t("resume.file")}>
                       <Button basic={false}>{t("resume.name")}</Button>
                     </a>
                   </li>
@@ -87,6 +88,7 @@ export const Header = ({ menuOpen, setMenuOpen }) => {
             className={menuOpen ? "burger open" : "burger"}
             onClick={() => setMenuOpen((prev) => !prev)}
             onKeyDown={() => setMenuOpen((prev) => !prev)}
+            aria-label="Open/Close Sidebar Nav"
           >
             <div className="burger-line"></div>
             <div className="burger-line"></div>
