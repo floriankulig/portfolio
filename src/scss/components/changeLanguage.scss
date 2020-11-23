@@ -2,11 +2,11 @@
   position: fixed;
   bottom: 50px;
   @include mq($mq-big) {
-    right: 70px;
+    right: 50px;
     width: 100px;
   }
   right: 25px;
-  width: 85px;
+  width: 80px;
   height: 30px;
   border: 1px solid grey;
   border-radius: 15px;
@@ -41,10 +41,13 @@
       font-size: 15px;
       margin: auto 0;
       font-weight: bold;
+      @include no-select();
       color: $text;
     }
     &-toggle-wrapper {
-      border-left: 1px solid grey;
+      @include mq($mq-big) {
+        border-left: 1px solid grey;
+      }
       padding: 5px 15px 5px 10px;
       height: 29px;
       cursor: pointer;
@@ -67,7 +70,10 @@
     li {
       height: 50%;
       width: 100%;
-      padding-left: 15px;
+      @include mq($mq-big) {
+        padding-left: 15px;
+      }
+      padding-left: 10px;
       padding-top: 8px;
       z-index: 2000;
       cursor: pointer;
