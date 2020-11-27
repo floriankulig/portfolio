@@ -6,16 +6,24 @@
   background: $background;
   max-width: 80vw;
   bottom: 50px;
-  left: 50px;
+  width: 80vw;
+  left: 10vw;
   text-align: center;
   box-shadow: $generic-box-shadow;
-  transform: translateX(-300px);
+  @include mq($mq-small) {
+    transform: translateX(-300px);
+    width: auto;
+
+    text-align: left;
+    left: 50px;
+  }
+  transform: translateY(300px);
   opacity: 0;
   transition: 0.4s all $easing;
   z-index: 4000;
 
   &.open {
-    transform: translateX(0px);
+    transform: translate(0, 0);
     opacity: 1;
   }
 
