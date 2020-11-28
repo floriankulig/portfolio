@@ -1,4 +1,6 @@
-export const mode = "prod";
+export const mode = "dev";
+
+export const scrollbarWidth = 17;
 
 export const navLinks = [
   { name: "Über Mich", url: "#about" },
