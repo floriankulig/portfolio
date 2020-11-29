@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Button } from "../Button";
-import { navLinks, scrollbarWidth } from "../../constants";
+import { navLinks } from "../../constants";
 import { ReactComponent as Logo } from "../../images/logo.svg";
 import { useOnClickOutside, useScrollDir } from "../../hooks";
 import { useTranslation } from "react-i18next";
@@ -29,14 +29,10 @@ export const Header = ({ menuOpen, setMenuOpen }) => {
   };
 
   useEffect(() => {
-    const bodyContainer = document.getElementsByClassName("container")[1];
     if (menuOpen) {
       document.body.style.overflow = "hidden";
-      // compensate scrollbar disappear by adding its width
-      bodyContainer.style.marginRight = `${30 + scrollbarWidth}px`;
     } else {
       document.body.style.overflow = null;
-      bodyContainer.style.marginRight = null;
       document.addEventListener("scroll", handleScroll);
     }
 
@@ -46,7 +42,7 @@ export const Header = ({ menuOpen, setMenuOpen }) => {
   return (
     <header
       className={
-        scrolled && scrollDir === "down"
+        scrolled && scrollDir === "down" && !menuOpen
           ? "scrolled up"
           : scrolled && scrollDir === "up"
           ? "scrolled down"
@@ -59,8 +55,7 @@ export const Header = ({ menuOpen, setMenuOpen }) => {
           <a className="logo" href="./" aria-label="Reload Page">
             <Logo />
           </a>
-          {/* <ul className={menuOpen ? "nav-links active" : "nav-links"}> */}
-          <ul className={"nav-links"}>
+          <ul className={menuOpen ? "nav-links active" : "nav-links"}>
             {navLinks &&
               navLinks.map(({ url, name }, i) =>
                 name !== "Lebenslauf" ? (
