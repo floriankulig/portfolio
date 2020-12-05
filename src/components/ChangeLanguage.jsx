@@ -42,6 +42,7 @@ export const ChangeLanguage = () => {
             onClick={() => handleClick("en")}
             onKeyDown={() => handleClick("en")}
             style={{ animationDelay: "0.15s" }}
+            data-testid="lang-option__english"
             aria-label="Change language to english"
             role="button"
           >
@@ -51,6 +52,7 @@ export const ChangeLanguage = () => {
             onClick={() => handleClick("de")}
             onKeyDown={() => handleClick("de")}
             style={{ animationDelay: "0.25s" }}
+            data-testid="lang-option__german"
             aria-label="Change language to german"
             role="button"
           >
