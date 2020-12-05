@@ -14,7 +14,11 @@ export const ChangeLanguage = () => {
   };
 
   return (
-    <div className={open ? "lang-changer open" : "lang-changer"} ref={ref}>
+    <div
+      className={open ? "lang-changer open" : "lang-changer"}
+      ref={ref}
+      data-testid="lang-changer"
+    >
       <div className="lang-changer__cta">
         <span>{i18next.language}</span>
         <div
@@ -22,6 +26,7 @@ export const ChangeLanguage = () => {
           onClick={() => setOpen(!open)}
           onKeyDown={() => setOpen(!open)}
           aria-label="Open language options"
+          data-testid="lang-changer-open"
           role="button"
         >
           <FaChevronDown />
@@ -29,7 +34,10 @@ export const ChangeLanguage = () => {
       </div>
 
       {open && (
-        <ul className="lang-changer__options">
+        <ul
+          className="lang-changer__options"
+          data-testid="lang-changer__options"
+        >
           <li
             onClick={() => handleClick("en")}
             onKeyDown={() => handleClick("en")}
