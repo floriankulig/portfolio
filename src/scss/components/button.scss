@@ -6,7 +6,7 @@ $btn-color: $accent;
   background-color: $btn-color;
   color: $background;
   padding: 15px 25px;
-  border-radius: 5px;
+  border-radius: $generic-border-radius;
   text-decoration: none;
   transition: 0.25s all ease;
 
