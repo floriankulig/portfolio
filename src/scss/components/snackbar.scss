@@ -1,7 +1,7 @@
 .snackbar {
   position: fixed;
   border: 2px solid $primary;
-  border-radius: 10px;
+  border-radius: $generic-border-radius;
   padding: 0.8em 1.5em;
   background: $background;
   max-width: 80vw;
