@@ -21,7 +21,7 @@ $overlay-color: darken($accent, 25%);
     max-width: 600px;
     position: relative;
     height: 100%;
-    border-radius: 5px;
+    border-radius: $generic-border-radius;
     margin-bottom: 0;
     grid-column: 1 / -1;
     grid-row: 1 / -1;
