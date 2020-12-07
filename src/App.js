@@ -24,7 +24,7 @@ export const App = () => {
   ) : (
     <>
       <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <Content />
+      <Content menuOpen={menuOpen} />
       <div id="overlay-entry"></div>
       <Footer />
       <ChangeLanguage />

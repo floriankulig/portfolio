@@ -7,12 +7,14 @@ import { Projects } from "../sections/Projects";
 import { scrollAppearConfig } from "../../helpers";
 import { useTranslation } from "react-i18next";
 
-export const Content = () => {
+export const Content = ({ menuOpen }) => {
   useEffect(() => scrollAppearConfig(), []);
   const { t } = useTranslation("common");
 
   return (
-    <div className="container content">
+    <div
+      className={menuOpen ? "container content blurred" : "container content"}
+    >
       <main className="main-col">
         <section className="hero">
           <Hero />
