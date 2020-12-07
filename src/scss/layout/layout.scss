@@ -4,6 +4,10 @@
     margin: 0 45px;
   }
 
+  &.blurred {
+    filter: blur(4px) brightness(1.1);
+  }
+
   &.content {
     min-height: 100vh;
     padding: 25vh 0;
