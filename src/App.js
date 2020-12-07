@@ -11,12 +11,24 @@ export const App = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [loading, setLoading] = useState(true);
 
+  const onResize = (e) => {
+    if (e.currentTarget.innerWidth > 720) {
+      setMenuOpen(false);
+    }
+  };
+
   useEffect(() => {
     const timeout = setTimeout(() => {
       setLoading(false);
       document.body.style.overflow = null;
     }, 5000);
-    return () => clearTimeout(timeout);
+
+    window.addEventListener("resize", onResize);
+
+    return () => {
+      clearTimeout(timeout);
+      window.removeEventListener("resize", onResize);
+    };
   }, []);
 
   return loading && mode !== "dev" ? (
