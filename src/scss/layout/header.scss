@@ -7,7 +7,7 @@ header {
   background-color: rgba($background, 0.97);
   transition: 0.4s all $easing;
   &.scrolled {
-    box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.7);
+    box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.5);
     nav {
       height: 40px;
     }
