@@ -10,6 +10,10 @@ Available at [floriankulig.github.io/portfolio](https://floriankulig.github.io/p
 
 - Clone repository
 
+```shell
+git clone https://github.com/floriankulig/portfolio.git
+```
+
 - Install dependencies
 
 ```shell
