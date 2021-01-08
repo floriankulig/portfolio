@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export const Skills = () => {
   return (
@@ -6,9 +6,9 @@ export const Skills = () => {
       <li>JavaScript (ES6+)</li>
       <li>React</li>
       <li>NextJS</li>
+      <li>TypeScript</li>
       <li>HTML & (S)CSS</li>
       <li>Firebase</li>
-      <li>Figma</li>
     </ul>
   );
 };
