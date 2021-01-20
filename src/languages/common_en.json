@@ -2,13 +2,13 @@
   "hero": {
     "greet": "Hi, my name is",
     "shortDesc": "I develop for the web",
-    "desc": "I'm a student from Treuchtlingen, Germany, who likes designing and building out Apps, Websites and everything in between.",
+    "desc": "I'm a student from Bavaria, Germany, who likes designing and building out Apps, Websites and everything in between.",
     "cta": "Get In Touch"
   },
   "about": {
     "header": "About",
     "section-header": "About Me",
-    "p1": "Hi, I'm Flo, student and hobby-developer from Treuchtlingen, Germany.",
+    "p1": "Hi, I'm Flo, student and hobby-developer from Bavaria, Germany.",
     "p2": "With the help of modern and upcoming technologies, I develop websites and apps, always having the same goal: Offering an experience as smooth and detailed as possible.",
     "p3": "Since my internship at the company Alfmeier, I've been following Software-Engineering with great interest while realizing own projects on the side.",
     "p4": "Here are a few technologies and tools I have recently been working with:"
