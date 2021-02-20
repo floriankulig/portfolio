@@ -1,14 +1,6 @@
 {
   "projects": [
     {
-      "title": "Testiply (currently in development)",
-      "desc": "A platform for developers to present their app and have it rated by testers. Developers can use a dashboard to find out how the testers feel about their current version of the app.",
-      "techStack": ["React", "NextJS", "TypeScript"],
-      "github": "https://github.com/floriankulig/testiply/",
-      "url": "",
-      "img": "testiply.png"
-    },
-    {
       "title": "Todoist Clone",
       "desc": "A clone of Todoist's Web-App. Users can create own projects, that have their own ToDos assigned to them. These ToDos and projects will be instantly registered in the database and synchronized on all devices signed in.",
       "techStack": ["React", "Firebase", "SCSS"],
@@ -23,6 +15,14 @@
       "github": "https://github.com/floriankulig/SortingVisualizer",
       "url": "",
       "img": "sortvis.png"
+    },
+    {
+      "title": "Testiply (currently in development)",
+      "desc": "A platform for developers to present their app and have it rated by testers. Developers can use a dashboard to find out how the testers feel about their current version of the app.",
+      "techStack": ["React", "NextJS", "TypeScript"],
+      "github": "https://github.com/floriankulig/testiply/",
+      "url": "",
+      "img": "testiply.png"
     }
   ]
 }

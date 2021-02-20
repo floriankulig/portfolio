@@ -1,14 +1,6 @@
 {
   "projects": [
     {
-      "title": "Testiply  (gerade in Entwicklung)",
-      "desc": "Eine Platform für Entwickler auf der sie ihre App präsentieren und von Testern bewerten lassen können. Entwickler können sich mit Hilfe von einem Dashboard über das Empfinden der Tester informieren.",
-      "techStack": ["React", "NextJS", "TypeScript"],
-      "github": "https://github.com/floriankulig/testiply/",
-      "url": "",
-      "img": "testiply.png"
-    },
-    {
       "title": "Todoist Klon",
       "desc": "Ein Klon der Web-App von Todoist. Der Nutzer kann eigene Projekte erstellen, die wiederrum eigene ToDos haben. Diese werden sofort in die Datenbank eingetragen und auf allen eingeloggten Geräten synchronisiert.",
       "techStack": ["React", "Firebase", "SCSS"],
@@ -23,6 +15,14 @@
       "github": "https://github.com/floriankulig/SortingVisualizer",
       "url": "",
       "img": "sortvis.png"
+    },
+    {
+      "title": "Testiply  (gerade in Entwicklung)",
+      "desc": "Eine Platform für Entwickler auf der sie ihre App präsentieren und von Testern bewerten lassen können. Entwickler können sich mit Hilfe von einem Dashboard über das Empfinden der Tester informieren.",
+      "techStack": ["React", "NextJS", "TypeScript"],
+      "github": "https://github.com/floriankulig/testiply/",
+      "url": "",
+      "img": "testiply.png"
     }
   ]
 }
