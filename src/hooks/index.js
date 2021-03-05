@@ -64,7 +64,6 @@ export const useProjects = (lang) => {
     if (lang) newProjects = require(`../languages/projects_${lang}.json`);
 
     setProjects(newProjects.projects);
-    console.log(projects);
   }, [lang, projects]);
 
   return projects;
