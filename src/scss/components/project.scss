@@ -63,13 +63,15 @@ $overlay-color: darken($accent, 25%);
         margin-top: 2em;
       }
       a {
+        width: 25px;
+        height: 25px;
         cursor: default;
+        margin-right: 2em;
         svg {
           cursor: pointer;
           color: $header-color;
           width: 25px;
           height: 25px;
-          margin-right: 2em;
           transition: 0.25s all $easing;
           &:hover {
             color: $primary-dark;
