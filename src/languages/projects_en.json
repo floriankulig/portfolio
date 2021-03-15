@@ -9,20 +9,20 @@
       "img": "todoist.png"
     },
     {
+      "title": "Testiply (currently in development)",
+      "desc": "A platform for developers to present their app and have it rated by testers. Developers can use a dashboard to find out how the testers feel about their current version of the app.",
+      "techStack": ["React", "NextJS", "TypeScript"],
+      "github": "https://github.com/floriankulig/testiply/",
+      "url": "https://testiply.vercel.app",
+      "img": "testiply.png"
+    },
+    {
       "title": "Sorting Algorithm Visualizer",
       "desc": "A Desktop-App that visualizes the most popular sorting algorithms. The elements to be sorted are displayed as pillars of different heights. These pillars will then be rearranged according to their values (heights).",
       "techStack": ["Python", "Tkinter"],
       "github": "https://github.com/floriankulig/SortingVisualizer",
       "url": "",
       "img": "sortvis.png"
-    },
-    {
-      "title": "Testiply (currently in development)",
-      "desc": "A platform for developers to present their app and have it rated by testers. Developers can use a dashboard to find out how the testers feel about their current version of the app.",
-      "techStack": ["React", "NextJS", "TypeScript"],
-      "github": "https://github.com/floriankulig/testiply/",
-      "url": "",
-      "img": "testiply.png"
     }
   ]
 }
