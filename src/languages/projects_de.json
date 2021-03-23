@@ -2,7 +2,7 @@
   "projects": [
     {
       "title": "Todoist Klon",
-      "desc": "Ein Klon der Web-App von Todoist. Der Nutzer kann eigene Projekte erstellen, die wiederrum eigene ToDos haben. Diese werden sofort in die Datenbank eingetragen und auf allen eingeloggten Geräten synchronisiert.",
+      "desc": "Ein Klon der Web-App von Todoist. Nutzer*innen können eigene Projekte erstellen, die wiederrum eigene ToDos haben. Diese werden sofort in die Datenbank eingetragen und auf allen eingeloggten Geräten synchronisiert.",
       "techStack": ["React", "Firebase", "SCSS"],
       "github": "https://github.com/floriankulig/Todoist-Clone/",
       "url": "https://floriankulig.github.io/Todoist-Clone/",
@@ -10,7 +10,7 @@
     },
     {
       "title": "Testiply  (gerade in Entwicklung)",
-      "desc": "Eine Platform für Entwickler auf der sie ihre App präsentieren und von Testern bewerten lassen können. Entwickler können sich mit Hilfe von einem Dashboard über das Empfinden der Tester informieren.",
+      "desc": "Eine Plattform für Entwickler*innen, auf der sie ihre App präsentieren und von Tester*innen bewerten lassen können. Entwickler*innen können sich mit Hilfe von einem Dashboard über das Empfinden der Tester*innen informieren.",
       "techStack": ["React", "NextJS", "TypeScript"],
       "github": "https://github.com/floriankulig/testiply/",
       "url": "https://testiply.vercel.app",
@@ -18,7 +18,7 @@
     },
     {
       "title": "Sortier-Algorithmen Visualizer",
-      "desc": "Eine Desktop-App mit der verschiedene Sortier-Algorithmen visualisiert werden können. Die Elemente, die in der zu sortierenden Liste sind, werden als Säulen mit verschiedenen Höhen dargestellt.",
+      "desc": "Eine Desktop-App, mit der verschiedene Sortier-Algorithmen visualisiert werden können. Die Elemente, die in der zu sortierenden Liste sind, werden als Säulen mit verschiedenen Höhen dargestellt.",
       "techStack": ["Python", "Tkinter"],
       "github": "https://github.com/floriankulig/SortingVisualizer",
       "url": "",
