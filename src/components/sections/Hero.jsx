@@ -10,9 +10,6 @@ export const Hero = () => {
       <h3 className="introduction fade-up">{t("hero.greet")}</h3>
       <h1 className="fade-up">Florian Kulig.</h1>
       <h1 className="short-desc fade-up">{t("hero.shortDesc")}.</h1>
-      {/* Ich bin ein Schüler aus Treuchtlingen, Bayern, der Spaß daran hat
-        designbetonte Websites, Apps und alles, was dazu gehört, zu (designen
-        und) entwickeln. */}
       <p className="desc fade-up">{t("hero.desc")}</p>
       <a href={`mailto:${email}`}>
         <Button className="cta fade-up" basic={true}>
