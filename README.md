@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-Available at [floriankulig.github.io/portfolio](https://floriankulig.github.io/portfolio/)
+Personal portfolio for showcasing projects 💪
 
 ## Preview
 
