@@ -1,10 +1,10 @@
 # Personal Portfolio
 
 Personal portfolio for showcasing projects 💪
-
+<!---
 ## Preview
 
-<img src="./src/images/preview.png">
+ <img src="./src/images/preview.png"> --->
 
 ## Run on your computer
 
