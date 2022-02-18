@@ -27,3 +27,7 @@ npm start
 ```
 
 - Access app on localhost:3000
+
+---
+
+Layout inspired by @brittanychiang
