@@ -6,6 +6,8 @@ import { Skills } from "../Skills";
 export const About = () => {
   const { t } = useTranslation("common");
 
+  const path = window.location;
+  const shows = path.toString().indexOf("?") > 1;
   return (
     <>
       <div className="section__inner-desc">
@@ -16,7 +18,14 @@ export const About = () => {
         <Skills />
       </div>
       <div className="section__inner-svg">
-        <Coder />
+        {shows ? (
+          <div className="section__inner-svg-wrapper">
+            <img src={require("../../images/me.jpg")} alt="Me" />
+            <div className="section__inner-svg-wrapper-overlay" />
+          </div>
+        ) : (
+          <Coder />
+        )}
       </div>
     </>
   );
