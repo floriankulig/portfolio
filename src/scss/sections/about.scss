@@ -25,6 +25,39 @@ section.about {
         height: 90%;
         width: 100%;
       }
+      &-wrapper {
+        width: 66%;
+        margin-left: 17%;
+        // mix-blend-mode: multiply;
+        position: relative;
+
+        img {
+          border-radius: $generic-border-radius;
+          filter: grayscale(100%) contrast(1);
+          box-shadow: rgba(0, 0, 0, 0.1) 2px 3px 9px;
+          width: 100%;
+        }
+        &-overlay {
+          border-radius: $generic-border-radius;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background-color: rgba($accent, 0.45);
+          &:hover {
+            transition: $easing 500ms;
+            opacity: 0;
+          }
+        }
+
+        &:hover {
+          img {
+            filter: none;
+            transition: all $easing 300ms;
+          }
+        }
+      }
     }
   }
 }
