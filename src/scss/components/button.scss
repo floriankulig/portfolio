@@ -23,4 +23,9 @@ $btn-color: $accent;
   &:hover {
     background-color: darken($btn-color, 5%);
   }
+
+  &:disabled {
+    background-color: lightgrey;
+    cursor: not-allowed;
+  }
 }
